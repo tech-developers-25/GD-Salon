@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f4f1ec">
+<title>Guddu Hair Salon — Premium Grooming in Hindaun City</title>
+<meta name="description" content="Book your appointment at Guddu Hair Salon. Premium grooming experience in Hindaun City.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Inter,Arial,sans-serif;}
+:root{--bg:#f4f1ec;--surface:#fff;--surface-soft:#faf8f4;--ink:#0a0a0a;--ink-2:#2a2a2a;--muted:#8a8a8a;--line:rgba(10,10,10,.08);--violet:#6d28d9;--violet-2:#8b5cf6;--violet-soft:rgba(109,40,217,.08);--danger:#ef4444;--card-bg:#fff;--input-bg:#fafaf7;--input-bg-focus:#fff;--tp-bg:#f7f4ef;--tp-item-bg:#fff;--skeleton-1:#ece7de;--skeleton-2:#f5f2ec;}
+body.dark{--bg:#0a0a0f;--surface:#141419;--surface-soft:#1a1a20;--ink:#f5f5f7;--ink-2:#e0e0e5;--muted:#8a8a95;--line:rgba(255,255,255,.08);--violet:#a78bfa;--violet-2:#8b5cf6;--violet-soft:rgba(139,92,246,.15);--card-bg:#17171d;--input-bg:#1a1a20;--input-bg-focus:#1f1f26;--tp-bg:#1a1a20;--tp-item-bg:#1a1a20;--skeleton-1:#1f1f26;--skeleton-2:#25252d;}
+body{background:var(--bg);color:var(--ink);min-height:100vh;letter-spacing:-0.015em;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;}
+button,input,select,textarea{font:inherit;}button{cursor:pointer;border:0;background:none;color:inherit;}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line);transition:background .3s;}
+body.dark .site-header{background:rgba(20,20,25,.9);}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;gap:20px;}
+.brand{display:flex;align-items:center;gap:12px;cursor:pointer;}
+.brand-logo{width:42px;height:42px;border-radius:10px;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;}
+.brand-logo img{width:100%;height:100%;object-fit:contain;padding:4px;}
+.brand-logo .fallback{font-weight:900;font-size:20px;background:linear-gradient(135deg,#8b5cf6,#6d28d9);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.brand-name{font-size:18px;font-weight:900;letter-spacing:-.4px;color:var(--ink);white-space:nowrap;}
+.site-nav{display:flex;align-items:center;gap:4px;margin-left:auto;}
+.nav-link{padding:10px 18px;border-radius:10px;font-size:14px;font-weight:700;color:var(--ink-2);transition:all .2s;}
+.nav-link:hover{background:var(--surface-soft);color:var(--ink);}
+.nav-link.active{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;box-shadow:0 4px 12px -4px rgba(139,92,246,.5);}
+.header-actions{display:flex;align-items:center;gap:10px;margin-left:8px;padding-left:16px;border-left:1px solid var(--line);}
+.theme-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);display:flex;align-items:center;justify-content:center;font-size:16px;transition:all .2s;}
+.theme-btn:hover{background:var(--surface-soft);}
+.theme-icon{display:inline-block;line-height:1;}
+.lang-toggle{position:relative;display:flex;background:var(--surface-soft);border:1px solid var(--line);border-radius:100px;padding:3px;overflow:hidden;}
+.lang-toggle .lang-indicator{position:absolute;top:3px;left:3px;width:calc(50% - 3px);height:calc(100% - 6px);background:var(--ink);border-radius:100px;transition:transform .35s cubic-bezier(.65,.05,.36,1);pointer-events:none;z-index:0;}
+.lang-toggle[data-active="hi"] .lang-indicator{transform:translateX(100%);}
+.lang-toggle button{position:relative;z-index:1;flex:1;padding:6px 12px;border-radius:100px;font-size:11px;font-weight:800;color:var(--muted);transition:color .3s;background:transparent;min-width:36px;text-align:center;}
+.lang-toggle button.active{color:var(--bg);}
+@media(max-width:720px){.header-inner{padding:0 14px;height:60px;gap:8px;}.brand-logo{width:34px;height:34px;}.brand-name{font-size:14px;max-width:90px;overflow:hidden;text-overflow:ellipsis;}.nav-link{padding:8px 10px;font-size:12px;}.header-actions{padding-left:8px;gap:6px;margin-left:4px;}.theme-btn{width:34px;height:34px;font-size:14px;}.lang-toggle button{padding:5px 8px;font-size:10px;min-width:28px;}}
+@media(max-width:480px){.brand-name{display:none;}.nav-link{padding:7px 9px;font-size:11.5px;}.header-actions{padding-left:6px;}.theme-btn{width:32px;height:32px;}}
+.site-main{min-height:calc(100vh - 72px - 300px);}
+.page{display:none;animation:pageIn .4s cubic-bezier(.2,.9,.3,1);}
+.page.active{display:block;}
+@keyframes pageIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.hero-wrap{max-width:1280px;margin:0 auto;padding:32px 24px 0;}
+.hero{position:relative;background:linear-gradient(135deg,#0d0a1f 0%,#1a1145 45%,#2d1b69 75%,#0a2918 100%);background-size:200% 200%;animation:heroGrad 18s ease infinite;color:#fff;border-radius:28px;padding:56px 48px 48px;overflow:hidden;box-shadow:0 25px 50px -20px rgba(45,27,105,.4);isolation:isolate;}
+@keyframes heroGrad{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
+.hero-bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;}
+.hero-bg span{position:absolute;border-radius:50%;filter:blur(80px);opacity:.5;}
+.hero-bg span:nth-child(1){width:300px;height:300px;background:#8b5cf6;top:-80px;left:-60px;}
+.hero-bg span:nth-child(2){width:250px;height:250px;background:#10b981;bottom:-80px;right:-50px;}
+.hero-bg span:nth-child(3){width:200px;height:200px;background:#fb7185;top:50%;left:60%;opacity:.35;}
+.hero-content{position:relative;z-index:2;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);border-radius:100px;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:#fff;font-weight:700;margin-bottom:24px;}
+.tag-star{font-size:11px;color:#fbbf24;}
+.hero h1{font-size:clamp(32px,5.5vw,64px);line-height:1.05;margin-bottom:20px;font-weight:900;letter-spacing:-2px;max-width:820px;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-sub{font-size:clamp(15px,1.6vw,18px);color:rgba(255,255,255,.7);max-width:600px;line-height:1.6;margin-bottom:32px;font-weight:500;}
+.hero-meta{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:32px;}
+.hero-meta p,.hero-meta a{color:rgba(255,255,255,.8);font-size:14px;display:flex;align-items:center;gap:9px;line-height:1.4;font-weight:500;text-decoration:none;}
+.hero-meta a:hover{color:#fff;}
+.hero-meta svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;opacity:.7;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;background:#fff;color:#0f0a1e;border-radius:12px;text-decoration:none;font-weight:800;font-size:15px;transition:transform .15s,box-shadow .2s;box-shadow:0 12px 28px -10px rgba(0,0,0,.4);}
+.btn-primary:hover{transform:translateY(-2px);}
+.btn-primary svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;}
+.btn-ghost{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.22);border-radius:12px;text-decoration:none;font-weight:700;font-size:15px;transition:background .2s;}
+.btn-ghost:hover{background:rgba(255,255,255,.18);}
+@media(max-width:720px){.hero-wrap{padding:20px 14px 0;}.hero{padding:40px 24px 36px;border-radius:22px;}.hero-meta{gap:14px;flex-direction:column;}.hero-actions{flex-direction:column;}.btn-primary,.btn-ghost{width:100%;justify-content:center;padding:14px 20px;font-size:14px;}}
+.section{max-width:1280px;margin:0 auto;padding:56px 24px;}
+.section-tight{padding:32px 24px 0;}
+.section-header{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:32px;flex-wrap:wrap;}
+.section-title{font-size:clamp(24px,3vw,36px);font-weight:900;letter-spacing:-1px;color:var(--ink);line-height:1.15;}
+.section-sub{color:var(--muted);font-size:15px;font-weight:500;margin-top:8px;max-width:520px;line-height:1.5;}
+@media(max-width:720px){.section{padding:32px 14px;}.section-tight{padding:24px 14px 0;}.section-header{margin-bottom:24px;}}
+.info-row{display:grid;grid-template-columns:2fr 1fr;gap:16px;}
+@media(max-width:720px){.info-row{grid-template-columns:1fr;}}
+.queue-card{display:flex;align-items:center;gap:16px;padding:22px 24px;background:linear-gradient(135deg,#0a0a0a,#2a2a2a);color:#fff;border-radius:20px;box-shadow:0 12px 30px -12px rgba(10,10,10,.35);position:relative;overflow:hidden;}
+.queue-card::before{content:"";position:absolute;top:-40%;right:-10%;width:180px;height:180px;background:radial-gradient(circle,rgba(139,92,246,.4),transparent 70%);border-radius:50%;}
+.queue-icon{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#8b5cf6,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;position:relative;z-index:1;}
+.queue-info{flex:1;position:relative;z-index:1;}
+.queue-label{font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:6px;}
+.queue-value{font-size:18px;font-weight:800;line-height:1.2;}
+.queue-value strong{font-size:28px;color:#a78bfa;margin-right:6px;font-weight:900;}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.quick-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:20px 16px;border-radius:16px;background:var(--card-bg);border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:800;font-size:13px;transition:all .2s;}
+.quick-btn:hover{transform:translateY(-2px);}
+.quick-btn .emoji{font-size:22px;line-height:1;}
+.quick-btn.whatsapp{background:linear-gradient(135deg,#16803c,#10b981);color:#fff;border-color:transparent;}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr;gap:14px;}}
+.service-card{background:var(--card-bg);border:1px solid var(--line);border-radius:20px;padding:24px;transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;}
+.service-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -16px rgba(10,10,10,.18);}
+.service-icon{font-size:28px;width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,#f5f2ec 0%,#ebe4d8 100%);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+body.dark .service-icon{background:linear-gradient(135deg,#25252d 0%,#1f1f26 100%);}
+.service-card h3{font-size:17px;margin-bottom:6px;font-weight:900;line-height:1.3;}
+.service-card p{color:var(--muted);font-size:13.5px;line-height:1.55;min-height:40px;flex:1;}
+.service-meta{display:flex;align-items:baseline;justify-content:space-between;margin-top:18px;padding-top:16px;border-top:1px dashed var(--line);gap:10px;}
+.service-price{font-size:26px;font-weight:900;letter-spacing:-1.2px;color:var(--violet);}
+.service-price::before{content:"₹";font-size:16px;margin-right:2px;font-weight:800;opacity:.85;}
+.service-duration{color:var(--muted);font-size:12px;font-weight:700;text-align:right;}
+.book-btn{width:100%;background:linear-gradient(135deg,#0a0a0a,#2a2a2a);color:#fff;padding:13px;border-radius:12px;margin-top:14px;font-weight:800;font-size:13.5px;transition:all .15s;}
+body.dark .book-btn{background:linear-gradient(135deg,#8b5cf6,#6d28d9);}
+.book-btn:hover{transform:translateY(-1px);}
+.skeleton-card{background:var(--card-bg);border:1px solid var(--line);border-radius:20px;padding:24px;}
+.skel{background:linear-gradient(90deg,var(--skeleton-1) 25%,var(--skeleton-2) 50%,var(--skeleton-1) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:8px;}
+@keyframes shimmer{0%{background-position:200% 0;}100%{background-position:-200% 0;}}
+.skel-icon{width:60px;height:60px;border-radius:16px;margin-bottom:18px;}
+.skel-line{height:14px;margin-bottom:10px;}
+.skel-line.short{width:60%;}.skel-line.medium{width:80%;}
+.skel-line.price{height:22px;width:40%;margin-top:16px;margin-bottom:14px;}
+.skel-btn{height:42px;border-radius:12px;}
+.booking-wrap{max-width:1100px;margin:0 auto;padding:40px 24px 60px;}
+.booking-title{font-size:clamp(28px,4vw,44px);font-weight:900;letter-spacing:-1.5px;margin-bottom:8px;line-height:1.15;}
+.booking-sub{color:var(--muted);font-size:15px;font-weight:500;margin-bottom:36px;line-height:1.5;}
+.booking-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:start;}
+@media(max-width:880px){.booking-wrap{padding:24px 14px 40px;}.booking-grid{grid-template-columns:1fr;gap:20px;}.booking-sub{margin-bottom:24px;}}
+.booking-summary,.booking-form{background:var(--card-bg);border:1px solid var(--line);border-radius:20px;padding:26px;}
+@media(max-width:600px){.booking-summary,.booking-form{padding:20px;border-radius:16px;}}
+.booking-summary{position:sticky;top:96px;}
+@media(max-width:880px){.booking-summary{position:static;}}
+.summary-title{font-size:13px;font-weight:900;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+.selected-services{display:flex;flex-direction:column;gap:10px;margin-bottom:16px;}
+.selected-service{display:flex;gap:12px;align-items:center;background:var(--tp-bg);border:1px solid var(--line);border-radius:14px;padding:14px;animation:slideIn .3s;}
+@keyframes slideIn{from{opacity:0;transform:translateX(-8px);}to{opacity:1;transform:translateX(0);}}
+.selected-service-icon{font-size:20px;width:42px;height:42px;border-radius:12px;background:var(--card-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.selected-service-info{flex:1;min-width:0;}
+.selected-service-info h3{margin-bottom:3px;font-size:14px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.selected-service-info p{color:var(--violet);font-size:13px;font-weight:800;}
+.remove-service-btn{width:28px;height:28px;border-radius:50%;background:rgba(239,68,68,.1);color:#ef4444;font-size:18px;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding-bottom:2px;}
+.add-service-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px;background:var(--card-bg);border:2px dashed rgba(139,92,246,.4);border-radius:14px;color:var(--violet);font-weight:800;font-size:13.5px;transition:all .2s;margin-bottom:16px;}
+.add-service-btn:hover{background:var(--violet-soft);border-style:solid;}
+.add-service-btn .plus{font-size:18px;font-weight:900;line-height:1;}
+.total-bar{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;background:linear-gradient(135deg,#0a0a0a,#2a2a2a);border-radius:14px;color:#fff;gap:10px;}
+.total-bar .total-label{font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:4px;display:block;}
+.total-bar .total-duration{font-size:11px;color:rgba(255,255,255,.55);font-weight:700;}
+.total-bar .total-value{font-size:26px;font-weight:900;letter-spacing:-1px;}
+.total-bar .total-value::before{content:"₹";font-size:16px;margin-right:2px;opacity:.8;}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:11.5px;font-weight:800;margin-bottom:8px;color:var(--ink);letter-spacing:.6px;text-transform:uppercase;}
+.field input,.field textarea{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;background:var(--input-bg);outline:none;font-size:14.5px;font-weight:500;transition:all .2s;color:var(--ink);}
+.field input:focus,.field textarea:focus{border-color:var(--violet-2);background:var(--input-bg-focus);box-shadow:0 0 0 4px var(--violet-soft);}
+.field input.invalid,.field textarea.invalid{border-color:var(--danger);}
+.field-error{display:none;font-size:11.5px;color:var(--danger);font-weight:700;margin-top:6px;padding-left:4px;}
+.field-error.show{display:block;}
+.date-quick{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+.date-quick button{padding:8px 14px;background:var(--card-bg);border:1.5px solid var(--line);border-radius:100px;font-size:12px;font-weight:800;color:var(--ink-2);transition:all .18s;}
+.date-quick button.active{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-color:transparent;}
+.phone-row{display:flex;gap:10px;}
+.country-btn{display:flex;align-items:center;gap:8px;padding:14px 12px;border:1.5px solid var(--line);border-radius:12px;background:var(--input-bg);font-size:14px;white-space:nowrap;flex-shrink:0;font-weight:700;}
+.country-btn .flag{font-size:18px;}
+.country-btn .code{color:var(--ink);font-weight:900;}
+.country-btn .arrow{font-size:9px;color:var(--muted);}
+.phone-input{flex:1;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;background:var(--input-bg);outline:none;font-size:14.5px;letter-spacing:2px;min-width:0;font-weight:700;transition:all .2s;color:var(--ink);}
+.phone-input:focus{border-color:var(--violet-2);background:var(--input-bg-focus);box-shadow:0 0 0 4px var(--violet-soft);}
+.phone-hint{font-size:11.5px;color:var(--muted);margin-top:6px;padding-left:4px;font-weight:600;}
+.time-picker{background:var(--tp-bg);border:1px solid var(--line);border-radius:16px;padding:18px 14px;display:flex;flex-direction:column;gap:16px;}
+.time-picker.error{border-color:rgba(239,68,68,.35);}
+.tp-field{display:flex;flex-direction:column;gap:8px;}
+.tp-field-label{font-size:10.5px;font-weight:900;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;padding-left:4px;}
+.tp-wrap{position:relative;border-radius:14px;overflow:hidden;background:var(--tp-item-bg);}
+.tp-wrap::before,.tp-wrap::after{content:"";position:absolute;top:0;bottom:0;width:36px;z-index:3;pointer-events:none;}
+.tp-wrap::before{left:0;background:linear-gradient(90deg,var(--tp-item-bg),transparent);}
+.tp-wrap::after{right:0;background:linear-gradient(270deg,var(--tp-item-bg),transparent);}
+.tp-cursor{position:absolute;left:50%;top:8px;bottom:8px;width:64px;transform:translateX(-50%);border:2px solid var(--violet-2);border-radius:12px;background:rgba(139,92,246,.06);pointer-events:none;z-index:2;}
+.time-picker.error .tp-cursor{border-color:var(--danger);}
+.tp-row{height:60px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;display:flex;align-items:center;padding:0 calc(50% - 32px);position:relative;z-index:1;}
+.tp-row::-webkit-scrollbar{display:none;}
+.tp-item{flex:0 0 64px;height:100%;display:flex;align-items:center;justify-content:center;scroll-snap-align:center;font-size:19px;font-weight:600;color:#c8c8c8;transition:all .2s;user-select:none;}
+body.dark .tp-item{color:#4a4a55;}
+.tp-item.active{color:var(--violet);transform:scale(1.15);font-weight:900;}
+.time-picker.error .tp-item.active{color:var(--danger);}
+.tp-ampm{display:flex;background:var(--tp-item-bg);border-radius:12px;padding:5px;gap:5px;}
+.tp-ampm button{flex:1;background:transparent;padding:11px;border-radius:9px;font-size:13px;font-weight:900;color:var(--muted);transition:all .2s;letter-spacing:1px;}
+.tp-ampm button.active{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;}
+.tp-selected-bar{display:flex;justify-content:center;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);padding:10px 0 0;font-weight:800;text-transform:uppercase;letter-spacing:.6px;flex-wrap:wrap;text-align:center;}
+.tp-selected-bar strong{color:var(--violet);font-size:16px;font-weight:900;}
+.time-picker.error .tp-selected-bar strong{color:var(--danger);}
+.time-warning{display:none;align-items:flex-start;gap:8px;padding:12px 14px;background:#fef2f2;border:1px solid rgba(239,68,68,.2);border-radius:12px;color:#991b1b;font-size:12px;font-weight:600;line-height:1.5;margin-top:10px;}
+body.dark .time-warning{background:rgba(153,27,27,.2);color:#fca5a5;}
+.time-warning.show{display:flex;}
+.time-warning .warn-icon{font-size:14px;flex-shrink:0;}
+.submit-btn{width:100%;background:linear-gradient(135deg,#0a0a0a,#2a2a2a);color:#fff;padding:16px;border-radius:12px;font-weight:900;font-size:14.5px;transition:all .15s;margin-top:8px;}
+body.dark .submit-btn{background:linear-gradient(135deg,#8b5cf6,#6d28d9);}
+.submit-btn:disabled{opacity:.4;cursor:not-allowed;}
+.bookings-wrap{max-width:1100px;margin:0 auto;padding:40px 24px 60px;}
+@media(max-width:600px){.bookings-wrap{padding:24px 14px 40px;}}
+#bookingList{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;}
+@media(max-width:600px){#bookingList{grid-template-columns:1fr;gap:12px;}}
+.booking-card{background:var(--card-bg);border:1px solid var(--line);border-radius:18px;padding:20px;position:relative;overflow:hidden;cursor:pointer;}
+.booking-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#8b5cf6,#6d28d9);}
+.booking-card.cancelled::before{background:linear-gradient(180deg,#ef4444,#991b1b);}
+.booking-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px;}
+.booking-head-left{flex:1;min-width:0;display:flex;flex-direction:column;gap:8px;}
+.booking-head-left h3{margin:0;font-size:16px;font-weight:900;line-height:1.25;}
+.booking-tags{display:flex;gap:6px;flex-wrap:wrap;}
+.booking-ref{display:inline-flex;font-size:10px;font-weight:900;color:var(--violet);background:var(--violet-soft);padding:3px 8px;border-radius:6px;letter-spacing:.4px;font-family:monospace;}
+.token-badge{display:inline-flex;font-size:11px;font-weight:900;color:#92400e;background:linear-gradient(135deg,#fef3c7,#fde68a);padding:4px 10px;border-radius:8px;font-family:monospace;border:1px solid rgba(245,158,11,.25);}
+body.dark .token-badge{background:rgba(245,158,11,.2);color:#fcd34d;border-color:rgba(245,158,11,.3);}
+.booking-price{flex-shrink:0;font-size:22px;font-weight:900;color:var(--violet);line-height:1;}
+.booking-price::before{content:"₹";font-size:14px;margin-right:1px;}
+.status{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:100px;font-size:11px;font-weight:800;text-transform:capitalize;align-self:flex-start;border:1px solid transparent;}
+.status::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;}
+.status.pending{background:#fef3c7;color:#92400e;border-color:rgba(245,158,11,.2);}
+.status.confirmed{background:#dbeafe;color:#1e40af;border-color:rgba(59,130,246,.2);}
+.status.completed{background:#dcfce7;color:#166534;border-color:rgba(16,185,129,.2);}
+.status.cancelled{background:#fee2e2;color:#991b1b;border-color:rgba(239,68,68,.2);}
+.booking-card p{color:var(--ink-2);font-size:13px;margin-top:6px;display:flex;align-items:center;gap:7px;font-weight:500;}
+.booking-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s;overflow:hidden;}
+.booking-body > div{overflow:hidden;min-height:0;padding-top:12px;}
+.booking-card.expanded .booking-body{grid-template-rows:1fr;}
+.booking-reminder{display:flex;align-items:center;gap:8px;padding:10px 12px;margin-bottom:10px;background:#fef3c7;border:1px solid rgba(245,158,11,.3);border-radius:10px;font-size:12px;font-weight:800;color:#92400e;}
+body.dark .booking-reminder{background:rgba(245,158,11,.15);color:#fcd34d;}
+.booking-reminder.urgent{background:#fee2e2;border-color:rgba(220,38,38,.3);color:#991b1b;}
+body.dark .booking-reminder.urgent{background:rgba(220,38,38,.2);color:#fca5a5;}
+.booking-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+.rebook-btn,.share-btn,.cancel-btn{flex:1;min-width:100px;display:flex;align-items:center;justify-content:center;gap:6px;padding:10px 14px;border-radius:10px;font-weight:800;font-size:12.5px;transition:all .15s;}
+.rebook-btn{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;}
+.share-btn{background:linear-gradient(135deg,#10b981,#059669);color:#fff;}
+.cancel-btn{background:var(--card-bg);border:1.5px solid rgba(239,68,68,.3);color:var(--danger);}
+.hidden-count{text-align:center;font-size:12px;color:var(--muted);font-weight:600;margin-top:14px;padding:12px;background:var(--surface-soft);border-radius:10px;border:1px dashed var(--line);grid-column:1/-1;}
+.empty{text-align:center;color:var(--muted);padding:60px 24px;background:var(--card-bg);border:1px dashed var(--line);border-radius:16px;grid-column:1/-1;}
+.empty h3{font-size:16px;font-weight:800;color:var(--ink-2);}
+.empty p{margin-top:6px;font-size:13px;}
+.error-card{text-align:center;padding:40px 24px;background:var(--card-bg);border:1px solid rgba(239,68,68,.2);border-radius:16px;grid-column:1/-1;}
+.error-card .err-icon{font-size:40px;margin-bottom:12px;}
+.error-card h3{font-size:16px;font-weight:800;margin-bottom:6px;}
+.error-card p{color:var(--muted);font-size:13px;margin-bottom:16px;}
+.retry-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-radius:10px;font-weight:800;font-size:13px;}
+.site-footer{background:#0a0a0f;color:#fff;margin-top:80px;padding:56px 24px 32px;}
+.footer-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+@media(max-width:720px){.footer-inner{grid-template-columns:1fr;gap:24px;text-align:center;}.site-footer{padding:40px 16px 24px;margin-top:48px;}}
+.footer-brand{font-size:22px;font-weight:900;color:#fff;margin-bottom:10px;}
+.footer-tagline{color:rgba(255,255,255,.55);font-size:13.5px;line-height:1.6;max-width:340px;}
+@media(max-width:720px){.footer-tagline{margin:0 auto;}}
+.footer-title{font-size:11px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:14px;}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-links a,.footer-links button{color:rgba(255,255,255,.7);font-size:13.5px;font-weight:600;text-decoration:none;transition:color .15s;text-align:left;padding:0;}
+@media(max-width:720px){.footer-links a,.footer-links button{text-align:center;}}
+.footer-links a:hover,.footer-links button:hover{color:#fff;}
+.footer-bottom{max-width:1280px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);text-align:center;color:rgba(255,255,255,.4);font-size:12px;font-weight:600;}
+.footer-bottom .heart{color:#fb7185;}
+.modal{position:fixed;inset:0;background:rgba(10,10,20,.6);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:20px;z-index:1000;}
+.modal.show{display:flex;animation:fadeIn .2s;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.modal-box{width:100%;max-width:420px;background:var(--card-bg);border-radius:22px;padding:32px 26px;text-align:center;animation:zoomIn .3s;box-shadow:0 30px 60px -20px rgba(0,0,0,.3);}
+@keyframes zoomIn{from{transform:scale(.9);opacity:0;}to{transform:scale(1);opacity:1;}}
+.success-icon{font-size:40px;width:80px;height:80px;border-radius:50%;background:#dcfce7;color:#16a34a;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-weight:bold;}
+.modal-box h2{margin-bottom:8px;font-size:21px;font-weight:900;}
+.modal-box p{color:var(--muted);line-height:1.6;font-size:13.5px;}
+.modal-btn{width:100%;background:var(--ink);color:var(--bg);padding:14px;border-radius:12px;margin-top:22px;font-weight:800;font-size:14px;}
+.modal-btn.secondary{background:var(--surface-soft);color:var(--ink);margin-top:10px;border:1.5px solid var(--line);}
+.confirm-box{text-align:left;}
+.confirm-box h2{text-align:center;}
+.confirm-box .confirm-sub{text-align:center;margin-bottom:20px;}
+.confirm-summary{background:var(--tp-bg);border-radius:14px;padding:16px;margin-bottom:16px;display:flex;flex-direction:column;gap:12px;}
+.confirm-row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;font-size:13px;}
+.confirm-row .label{color:var(--muted);font-weight:700;font-size:11px;letter-spacing:.5px;text-transform:uppercase;flex-shrink:0;}
+.confirm-row .value{color:var(--ink);font-weight:800;text-align:right;flex:1;min-width:0;word-break:break-word;}
+.confirm-row .value.price{color:var(--violet);font-size:17px;font-weight:900;}
+.confirm-actions{display:flex;gap:10px;}
+.confirm-actions button{flex:1;}
+.confirm-btn{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;padding:14px;border-radius:12px;font-weight:800;font-size:13.5px;}
+.confirm-btn:disabled{opacity:.5;}
+.cancel-confirm-btn{background:linear-gradient(135deg,#dc2626,#991b1b)!important;}
+.toast{position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);background:#0a0a0a;color:#fff;padding:13px 20px;border-radius:12px;font-size:13.5px;font-weight:700;opacity:0;transition:all .3s;z-index:900;pointer-events:none;max-width:calc(100% - 40px);text-align:center;}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+.toast.error{background:linear-gradient(135deg,#991b1b,#dc2626);}
+.toast.success{background:linear-gradient(135deg,#065f46,#10b981);}
+.country-sheet,.service-sheet{position:fixed;inset:0;background:rgba(10,10,20,.5);backdrop-filter:blur(8px);display:none;align-items:flex-end;justify-content:center;z-index:700;}
+.country-sheet.show,.service-sheet.show{display:flex;animation:fadeIn .2s;}
+.country-sheet-box,.service-sheet-box{background:var(--card-bg);width:100%;max-width:460px;max-height:80vh;border-radius:24px 24px 0 0;display:flex;flex-direction:column;overflow:hidden;animation:slideUp .35s;}
+@media(min-width:720px){.country-sheet,.service-sheet{align-items:center;}.country-sheet-box,.service-sheet-box{border-radius:20px;max-height:600px;}}
+@keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
+.country-sheet-header,.service-sheet-header{padding:20px 22px 16px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-shrink:0;}
+.country-sheet-header h3,.service-sheet-header h3{font-size:17px;font-weight:900;}
+.country-sheet-header button,.service-sheet-header button{font-size:26px;line-height:1;color:var(--muted);padding:0 4px;}
+.service-search-wrap{padding:14px 18px 8px;flex-shrink:0;}
+.service-search{width:100%;padding:12px 16px 12px 40px;background:var(--input-bg);border:1.5px solid var(--line);border-radius:12px;font-size:14px;outline:none;color:var(--ink);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a8a8a' stroke-width='2.2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:14px center;font-weight:600;}
+.service-search:focus{border-color:var(--violet-2);background-color:var(--input-bg-focus);}
+.country-list,.service-list{overflow-y:auto;padding:8px 14px 20px;display:flex;flex-direction:column;gap:10px;}
+.country-list{padding:8px 0;gap:0;}
+.country-item{display:flex;align-items:center;gap:14px;padding:14px 22px;width:100%;text-align:left;font-size:14px;}
+.country-item:hover{background:var(--surface-soft);}
+.country-item .flag{font-size:22px;}
+.country-item .name{flex:1;color:var(--ink);font-weight:700;}
+.country-item .code{color:var(--muted);font-weight:800;}
+.country-item.selected .name,.country-item.selected .code{color:var(--violet);}
+.service-item{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--input-bg);border:1.5px solid var(--line);border-radius:14px;text-align:left;width:100%;transition:all .15s;}
+.service-item.selected{background:var(--violet-soft);border-color:var(--violet-2);}
+.service-item-icon{width:44px;height:44px;border-radius:12px;background:var(--card-bg);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;border:1px solid var(--line);}
+.service-item.selected .service-item-icon{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-color:transparent;}
+.service-item-info{flex:1;min-width:0;}
+.service-item-info .name{font-size:14px;font-weight:800;margin-bottom:3px;}
+.service-item-info .desc{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.service-item-price{font-size:15px;font-weight:900;flex-shrink:0;}
+.service-item.selected .service-item-price{color:var(--violet);}
+.service-item-check{width:20px;height:20px;border-radius:50%;border:2px solid var(--line);flex-shrink:0;position:relative;}
+.service-item.selected .service-item-check{background:linear-gradient(135deg,#8b5cf6,#6d28d9);border-color:transparent;}
+.service-item.selected .service-item-check::after{content:"";position:absolute;left:5px;top:6px;width:8px;height:4px;border-left:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(-45deg);}
+.no-result{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;font-weight:600;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand" onclick="showPage('home')">
+      <div class="brand-logo">
+        <img src="logo.png" alt="Guddu Hair Salon" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="fallback" style="display:none">G</span>
+      </div>
+      <span class="brand-name" id="navBrandText">Guddu Hair Salon</span>
+    </div>
+    <nav class="site-nav">
+      <button class="nav-link active" id="homeNav" onclick="showPage('home')">Home</button>
+      <button class="nav-link" id="bookingNav" onclick="goBooking()">Book</button>
+      <button class="nav-link" id="appointmentsNav" onclick="showPage('bookings')">My Appointments</button>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" id="langToggle" data-active="en">
+        <div class="lang-indicator"></div>
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="hi">हिं</button>
+      </div>
+      <button class="theme-btn" id="themeToggleBtn"><span class="theme-icon">🌙</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="site-main">
+  <section class="page active" id="homePage">
+    <div class="hero-wrap">
+      <div class="hero">
+        <div class="hero-bg"><span></span><span></span><span></span></div>
+        <div class="hero-content">
+          <span class="hero-tag"><span class="tag-star">✦</span><span data-i18n="hero.tag">Premium Grooming</span></span>
+          <h1 id="heroSalonName">Guddu Hair Salon</h1>
+          <p class="hero-sub" data-i18n="hero.sub">Premium grooming experience in Hindaun City. Book your appointment online in seconds.</p>
+          <div class="hero-meta">
+            <a id="addressLink" href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-6.5 8-12a8 8 0 1 0-16 0c0 5.5 8 12 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span id="salonAddress">Near New Mandi Thana, Hindaun City</span>
+            </a>
+            <p>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span id="salonOpening">09:00 AM — 08:00 PM</span>
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a id="heroCall" class="btn-primary" href="tel:9999999999">
+              <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span data-i18n="hero.call">Call Now</span>
+            </a>
+            <button class="btn-ghost" onclick="showPage('booking')">
+              <span data-i18n="hero.book">Book Appointment</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-tight">
+      <div class="info-row">
+        <div class="queue-card">
+          <div class="queue-icon">👥</div>
+          <div class="queue-info">
+            <div class="queue-label" data-i18n="queue.label">Today's Queue</div>
+            <div class="queue-value" id="queueValue"><strong>0</strong><span data-i18n="queue.people">people waiting</span></div>
+          </div>
+        </div>
+        <div class="quick-grid">
+          <a id="callButton" href="tel:9999999999" class="quick-btn"><span class="emoji">📞</span><span data-i18n="quick.call">Call</span></a>
+          <a id="whatsappButton" href="#" target="_blank" class="quick-btn whatsapp"><span class="emoji">💬</span><span data-i18n="quick.whatsapp">WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+          <p class="section-sub" data-i18n="services.sub">Choose from our curated grooming services and book instantly.</p>
+        </div>
+      </div>
+      <div class="services-grid" id="serviceGrid">
+        <div class="skeleton-card"><div class="skel skel-icon"></div><div class="skel skel-line medium"></div><div class="skel skel-line short"></div><div class="skel skel-line price"></div><div class="skel skel-btn"></div></div>
+        <div class="skeleton-card"><div class="skel skel-icon"></div><div class="skel skel-line medium"></div><div class="skel skel-line short"></div><div class="skel skel-line price"></div><div class="skel skel-btn"></div></div>
+        <div class="skeleton-card"><div class="skel skel-icon"></div><div class="skel skel-line medium"></div><div class="skel skel-line short"></div><div class="skel skel-line price"></div><div class="skel skel-btn"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="bookingPage">
+    <div class="booking-wrap">
+      <h1 class="booking-title" data-i18n="booking.title">Book Appointment</h1>
+      <p class="booking-sub" data-i18n="booking.sub">Select your services and preferred time — instant confirmation.</p>
+      <div class="booking-grid">
+        <div class="booking-summary">
+          <div class="summary-title" data-i18n="booking.selectedServices">Selected Services</div>
+          <div class="selected-services" id="selectedServicesList"></div>
+          <button type="button" class="add-service-btn" onclick="openServiceSheet()">
+            <span class="plus">+</span><span data-i18n="booking.addService">Add more service</span>
+          </button>
+          <div class="total-bar" id="totalBar" style="display:none;">
+            <div>
+              <span class="total-label" data-i18n="booking.total">Total</span>
+              <span class="total-duration" id="totalDuration"></span>
+            </div>
+            <span class="total-value" id="totalValue">0</span>
+          </div>
+        </div>
+        <div class="booking-form">
+          <div class="field">
+            <label data-i18n="booking.name">Your Name</label>
+            <input id="customerName" type="text" placeholder="Enter your name" autocomplete="name">
+            <div class="field-error" id="errName"></div>
+          </div>
+          <div class="field">
+            <label data-i18n="booking.phone">Phone Number</label>
+            <div class="phone-row">
+              <button type="button" class="country-btn" onclick="openCountrySheet()">
+                <span class="flag" id="countryFlag">🇮🇳</span><span class="code" id="countryCode">+91</span><span class="arrow">▾</span>
+              </button>
+              <input id="customerPhone" class="phone-input" type="tel" inputmode="numeric" maxlength="10" placeholder="10 digit number" autocomplete="tel">
+            </div>
+            <div class="field-error" id="errPhone"></div>
+            <div class="phone-hint" id="phoneHint">10 digit number required for India</div>
+          </div>
+          <div class="field">
+            <label data-i18n="booking.date">Appointment Date</label>
+            <div class="date-quick" id="dateQuick">
+              <button type="button" data-offset="0" data-i18n="date.today">Today</button>
+              <button type="button" data-offset="1" data-i18n="date.tomorrow">Tomorrow</button>
+              <button type="button" data-offset="2" data-i18n="date.dayafter">Day After</button>
+            </div>
+            <input id="bookingDate" type="date">
+            <div class="field-error" id="errDate"></div>
+          </div>
+          <div class="field">
+            <label data-i18n="booking.time">Select Time</label>
+            <div class="time-picker" id="timePickerBox">
+              <div class="tp-field"><span class="tp-field-label" data-i18n="booking.hour">Hour</span><div class="tp-wrap"><div class="tp-cursor"></div><div class="tp-row" id="tpHour"></div></div></div>
+              <div class="tp-field"><span class="tp-field-label" data-i18n="booking.minute">Minute</span><div class="tp-wrap"><div class="tp-cursor"></div><div class="tp-row" id="tpMinute"></div></div></div>
+              <div class="tp-field"><span class="tp-field-label" data-i18n="booking.period">Period</span><div class="tp-ampm" id="tpAmpm"><button type="button" data-ampm="AM" class="active">AM</button><button type="button" data-ampm="PM">PM</button></div></div>
+              <div class="tp-selected-bar"><span data-i18n="booking.selected">Selected:</span><strong id="tpSelected">09:00 AM</strong></div>
+            </div>
+            <div class="time-warning" id="timeWarning"><span class="warn-icon">⚠️</span><span id="timeWarningText"></span></div>
+          </div>
+          <div class="field">
+            <label data-i18n="booking.note">Note (Optional)</label>
+            <textarea id="customerNote" rows="3" placeholder="Any special request?"></textarea>
+          </div>
+          <button class="submit-btn" id="submitBtn" onclick="openConfirmDialog()" data-i18n="booking.submit">Book Appointment</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="bookingsPage">
+    <div class="bookings-wrap">
+      <h1 class="booking-title" data-i18n="appointments.title">My Appointments</h1>
+      <p class="booking-sub" data-i18n="appointments.sub">View, share or cancel your bookings.</p>
+      <div id="bookingList">
+        <div class="skeleton-card"><div class="skel skel-line medium"></div><div class="skel skel-line short"></div></div>
+        <div class="skeleton-card"><div class="skel skel-line medium"></div><div class="skel skel-line short"></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand" id="footerBrand">Guddu Hair Salon</div>
+      <p class="footer-tagline" data-i18n="footer.tagline">Premium grooming experience in Hindaun City. Book online, skip the wait.</p>
+    </div>
+    <div>
+      <div class="footer-title" data-i18n="footer.nav">Navigate</div>
+      <div class="footer-links">
+        <button onclick="showPage('home')" data-i18n="nav.home">Home</button>
+        <button onclick="showPage('booking')" data-i18n="nav.book">Book</button>
+        <button onclick="showPage('bookings')" data-i18n="nav.appointments">My Appointments</button>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title" data-i18n="footer.contact">Contact</div>
+      <div class="footer-links">
+        <a id="footerPhone" href="tel:9999999999">📞 <span id="footerPhoneText">+91 99999 99999</span></a>
+        <a id="footerWhatsapp" href="#" target="_blank">💬 WhatsApp</a>
+        <a id="footerAddress" href="#" target="_blank">📍 <span id="footerAddressText">Hindaun City</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© <span id="footerYear">2025</span> Guddu Hair Salon · Made with <span class="heart">♥</span> by Mudit Garg</div>
+</footer>
+
+<div class="modal" id="successModal">
+  <div class="modal-box">
+    <div class="success-icon">✓</div>
+    <h2 data-i18n="success.title">Booking Successful</h2>
+    <p id="successText">Your appointment has been booked.</p>
+    <div id="successRef" style="margin-top:14px;"></div>
+    <button class="modal-btn" onclick="closeSuccess()" data-i18n="success.done">Done</button>
+  </div>
+</div>
+
+<div class="modal" id="confirmModal">
+  <div class="modal-box confirm-box">
+    <h2 data-i18n="confirm.title">Confirm Booking</h2>
+    <p class="confirm-sub" data-i18n="confirm.sub">Please check the details below</p>
+    <div class="confirm-summary" id="confirmSummary"></div>
+    <div class="confirm-actions">
+      <button class="modal-btn secondary" onclick="closeConfirmDialog()" data-i18n="confirm.back">Back</button>
+      <button class="confirm-btn" id="confirmSubmitBtn" onclick="submitBooking()" data-i18n="confirm.confirm">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="cancelModal">
+  <div class="modal-box confirm-box">
+    <h2 data-i18n="cancel.title">Cancel Booking?</h2>
+    <p class="confirm-sub" data-i18n="cancel.reason">Are you sure you want to cancel?</p>
+    <div class="confirm-summary" id="cancelSummary"></div>
+    <div class="confirm-actions">
+      <button class="modal-btn secondary" onclick="closeCancelDialog()" data-i18n="cancel.no">Keep</button>
+      <button class="confirm-btn cancel-confirm-btn" id="cancelConfirmBtn" onclick="confirmCancelBooking()" data-i18n="cancel.yes">Yes, Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="country-sheet" id="countrySheet">
+  <div class="country-sheet-box">
+    <div class="country-sheet-header">
+      <h3 data-i18n="country.title">Select Country</h3>
+      <button onclick="closeCountrySheet()">×</button>
+    </div>
+    <div class="country-list" id="countryList"></div>
+  </div>
+</div>
+
+<div class="service-sheet" id="serviceSheet">
+  <div class="service-sheet-box">
+    <div class="service-sheet-header">
+      <h3 data-i18n="serviceSheet.title">Choose Service</h3>
+      <button onclick="closeServiceSheet()">×</button>
+    </div>
+    <div class="service-search-wrap">
+      <input type="text" class="service-search" id="serviceSearchInput" placeholder="Search service...">
+    </div>
+    <div class="service-list" id="serviceList"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, collection, doc, addDoc, updateDoc, onSnapshot, query, where, getDocs, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {apiKey:"AIzaSyAjPVhpY4RQsO5Ys14kxuLH8IDjc5GEHHc",authDomain:"style-studio-c67af.firebaseapp.com",projectId:"style-studio-c67af",storageBucket:"style-studio-c67af.firebasestorage.app",messagingSenderId:"739124599086",appId:"1:739124599086:web:6ff80f65dfb3f5ac57c2bf"};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+let currentUser=null,SERVICES=[],customerBookings=[],selectedServices=[],selectedTime="09:00 AM";
+let unsubscribeBookings=null,unsubscribeQueue=null,unsubscribeServices=null,unsubscribeSettings=null;
+let pendingBooking=null,serviceSearchQuery="",cancellingBookingId=null;
+const MAX_BOOKINGS_PER_SLOT=3,CANCEL_CUTOFF_MINUTES=60,HIDE_PAST_DAYS=30,LAST_BOOKING_BUFFER_MIN=60;
+const expandedBookings=new Set();
+let SALON={name:"Guddu Hair Salon",address:"Near New Mandi Thana, Hindaun City",phone:"9999999999",whatsapp:"919999999999",openingTime:"09:00",closingTime:"20:00",closingDay:"No Holiday"};
+
+const I18N={
+en:{"hero.tag":"Premium Grooming","hero.call":"Call Now","hero.sub":"Premium grooming experience in Hindaun City. Book your appointment online in seconds.","hero.book":"Book Appointment","queue.label":"Today's Queue","queue.people":"people waiting","queue.empty":"No one waiting","services.title":"Our Services","services.sub":"Choose from our curated grooming services and book instantly.","quick.call":"Call","quick.whatsapp":"WhatsApp","booking.title":"Book Appointment","booking.sub":"Select your services and preferred time — instant confirmation.","booking.selectedServices":"Selected Services","booking.addService":"Add more service","booking.total":"Total","booking.name":"Your Name","booking.namePlaceholder":"Enter your name","booking.phone":"Phone Number","booking.date":"Appointment Date","booking.time":"Select Time","booking.hour":"Hour","booking.minute":"Minute","booking.period":"Period","booking.selected":"Selected:","booking.note":"Note (Optional)","booking.notePlaceholder":"Any special request?","booking.submit":"Book Appointment","appointments.title":"My Appointments","appointments.sub":"View, share or cancel your bookings.","nav.home":"Home","nav.book":"Book","nav.appointments":"My Appointments","footer.tagline":"Premium grooming experience in Hindaun City. Book online, skip the wait.","footer.nav":"Navigate","footer.contact":"Contact","success.title":"Booking Successful","success.done":"Done","country.title":"Select Country","serviceSheet.title":"Choose Service","serviceSheet.search":"Search service...","empty.services":"No services available","empty.servicesSub":"Please check back later.","empty.bookings":"No appointments yet","empty.bookingsSub":"Your bookings will appear here.","empty.noService":"No service selected","empty.tapAdd":"Tap below to add","empty.noResult":"No service found","empty.noResultSub":"Try a different search","btn.bookNow":"Book Now","btn.bookAgain":"Book Again","btn.cancel":"Cancel","btn.retry":"Try Again","btn.share":"Share","error.loadServices":"Could not load services","error.loadServicesSub":"Please check your internet connection","error.loadBookings":"Could not load appointments","error.loadBookingsSub":"Please check your internet connection","booking.done":"Your appointment has been booked.","toast.selectService":"Please select a service first","toast.name":"Please enter your name","toast.phone":"Please enter your phone number","toast.phoneLen":"Phone must be exactly {n} digits","toast.date":"Please select a date","toast.validDate":"Please select a valid date","toast.slotTaken":"This time slot is already booked. Please choose another time.","toast.slotFull":"This time slot is full (3 bookings already). Please choose another time.","toast.connecting":"Connecting...","toast.failed":"Booking failed. Please try again.","toast.servicesUnavailable":"Services are no longer available","toast.noServices":"Please select at least one service","toast.offline":"You are offline. Please check your internet.","toast.cancelled":"Booking cancelled successfully","toast.cancelFailed":"Could not cancel. Please try again.","toast.cancelTooLate":"Cannot cancel — appointment is less than 1 hour away. Please call the salon.","toast.shared":"Shared successfully!","toast.shareFailed":"Could not share","phone.hint":"{n} digit number required for {c}","time.past":"Today's {t} has already passed. Please pick a later time or select a different date.","time.beforeOpen":"The salon opens at {t}. Booking is not available before that.","time.afterClose":"The salon closes at {c}. The last booking is accepted until {l}. Please choose an earlier time.","date.today":"Today","date.tomorrow":"Tomorrow","date.dayafter":"Day After","confirm.title":"Confirm Booking","confirm.sub":"Please check the details below","confirm.back":"Back","confirm.confirm":"Confirm","confirm.services":"Services","confirm.date":"Date","confirm.time":"Time","confirm.name":"Name","confirm.phone":"Phone","confirm.total":"Total","confirm.duration":"Duration","confirm.bookingId":"Booking ID","confirm.token":"Token","success.refLabel":"Your Booking ID","success.tokenLabel":"Your Token Number","success.copy":"Tap to copy","cancel.title":"Cancel Booking?","cancel.reason":"Are you sure you want to cancel this appointment? This cannot be undone.","cancel.no":"Keep Booking","cancel.yes":"Yes, Cancel","share.salon":"Guddu Hair Salon","share.greeting":"My appointment is booked! 💇‍♂️","share.bookingId":"Booking ID","share.token":"Token","share.services":"Services","share.date":"Date","share.time":"Time","share.duration":"Duration","share.total":"Total","share.name":"Name","share.phone":"Phone","share.footer":"See you soon! 🙏","hidden.text":"{n} old booking(s) hidden"},
+hi:{"hero.tag":"प्रीमियम ग्रूमिंग","hero.call":"अभी कॉल करें","hero.sub":"हिंडौन सिटी में प्रीमियम ग्रूमिंग। सेकंडों में ऑनलाइन अपॉइंटमेंट बुक करें।","hero.book":"अपॉइंटमेंट बुक करें","queue.label":"आज की कतार","queue.people":"लोग इंतज़ार में","queue.empty":"कोई इंतज़ार नहीं","services.title":"हमारी सेवाएं","services.sub":"हमारी चुनिंदा सेवाओं में से चुनें और तुरंत बुक करें।","quick.call":"कॉल","quick.whatsapp":"व्हाट्सएप","booking.title":"अपॉइंटमेंट बुक करें","booking.sub":"अपनी सेवाएं और समय चुनें — तुरंत पुष्टि।","booking.selectedServices":"चुनी गई सेवाएं","booking.addService":"और सेवा जोड़ें","booking.total":"कुल","booking.name":"आपका नाम","booking.namePlaceholder":"अपना नाम लिखें","booking.phone":"फ़ोन नंबर","booking.date":"अपॉइंटमेंट की तारीख","booking.time":"समय चुनें","booking.hour":"घंटा","booking.minute":"मिनट","booking.period":"अवधि","booking.selected":"चुना गया:","booking.note":"नोट (वैकल्पिक)","booking.notePlaceholder":"कोई खास अनुरोध?","booking.submit":"अपॉइंटमेंट बुक करें","appointments.title":"मेरे अपॉइंटमेंट","appointments.sub":"अपनी बुकिंग देखें, शेयर करें या रद्द करें।","nav.home":"होम","nav.book":"बुक","nav.appointments":"मेरे अपॉइंटमेंट","footer.tagline":"हिंडौन सिटी में प्रीमियम ग्रूमिंग। ऑनलाइन बुक करें, इंतज़ार छोड़ें।","footer.nav":"नेविगेट","footer.contact":"संपर्क","success.title":"बुकिंग सफल","success.done":"ठीक है","country.title":"देश चुनें","serviceSheet.title":"सेवा चुनें","serviceSheet.search":"सेवा खोजें...","empty.services":"कोई सेवा उपलब्ध नहीं","empty.servicesSub":"कृपया बाद में देखें।","empty.bookings":"अभी कोई अपॉइंटमेंट नहीं","empty.bookingsSub":"आपकी बुकिंग यहाँ दिखेगी।","empty.noService":"कोई सेवा नहीं चुनी","empty.tapAdd":"जोड़ने के लिए नीचे टैप करें","empty.noResult":"कोई सेवा नहीं मिली","empty.noResultSub":"दूसरा नाम आज़माएं","btn.bookNow":"अभी बुक करें","btn.bookAgain":"फिर से बुक करें","btn.cancel":"रद्द करें","btn.retry":"फिर कोशिश करें","btn.share":"शेयर","error.loadServices":"सेवाएं लोड नहीं हो सकीं","error.loadServicesSub":"कृपया इंटरनेट कनेक्शन जांचें","error.loadBookings":"अपॉइंटमेंट लोड नहीं हो सके","error.loadBookingsSub":"कृपया इंटरनेट कनेक्शन जांचें","booking.done":"आपका अपॉइंटमेंट बुक हो गया है।","toast.selectService":"कृपया पहले एक सेवा चुनें","toast.name":"कृपया अपना नाम दर्ज करें","toast.phone":"कृपया अपना फ़ोन नंबर दर्ज करें","toast.phoneLen":"फ़ोन नंबर ठीक {n} अंकों का होना चाहिए","toast.date":"कृपया तारीख चुनें","toast.validDate":"कृपया मान्य तारीख चुनें","toast.slotTaken":"यह समय पहले से बुक है। कृपया दूसरा समय चुनें।","toast.slotFull":"यह समय पूरा भर गया है। कृपया दूसरा समय चुनें।","toast.connecting":"कनेक्ट हो रहा है...","toast.failed":"बुकिंग विफल रही। कृपया फिर कोशिश करें।","toast.servicesUnavailable":"सेवाएं अब उपलब्ध नहीं हैं","toast.noServices":"कृपया कम से कम एक सेवा चुनें","toast.offline":"आप ऑफ़लाइन हैं। कृपया इंटरनेट जांचें।","toast.cancelled":"बुकिंग सफलतापूर्वक रद्द हो गई","toast.cancelFailed":"रद्द नहीं हो सका। कृपया फिर कोशिश करें।","toast.cancelTooLate":"रद्द नहीं हो सकता — अपॉइंटमेंट 1 घंटे से कम में है। कृपया सैलून को कॉल करें।","toast.shared":"सफलतापूर्वक शेयर हो गया!","toast.shareFailed":"शेयर नहीं हो सका","phone.hint":"{c} के लिए {n} अंकों का नंबर चाहिए","time.past":"आज का {t} बीत चुका है। कृपया बाद का समय या दूसरी तारीख चुनें।","time.beforeOpen":"सैलून {t} पर खुलता है। उससे पहले बुकिंग उपलब्ध नहीं है।","time.afterClose":"सैलून {c} पर बंद होता है। आखिरी बुकिंग {l} तक स्वीकार की जाती है। कृपया पहले का समय चुनें।","date.today":"आज","date.tomorrow":"कल","date.dayafter":"परसों","confirm.title":"बुकिंग की पुष्टि करें","confirm.sub":"कृपया नीचे दी गई जानकारी जांचें","confirm.back":"वापस","confirm.confirm":"पुष्टि करें","confirm.services":"सेवाएं","confirm.date":"तारीख","confirm.time":"समय","confirm.name":"नाम","confirm.phone":"फ़ोन","confirm.total":"कुल","confirm.duration":"अवधि","confirm.bookingId":"बुकिंग आईडी","confirm.token":"टोकन","success.refLabel":"आपकी बुकिंग आईडी","success.tokenLabel":"आपका टोकन नंबर","success.copy":"कॉपी करने के लिए टैप करें","cancel.title":"बुकिंग रद्द करें?","cancel.reason":"क्या आप वाकई यह अपॉइंटमेंट रद्द करना चाहते हैं? यह वापस नहीं हो सकता।","cancel.no":"बुकिंग रखें","cancel.yes":"हाँ, रद्द करें","share.salon":"गुड्डू हेयर सलून","share.greeting":"मेरा अपॉइंटमेंट बुक हो गया है! 💇‍♂️","share.bookingId":"बुकिंग आईडी","share.token":"टोकन","share.services":"सेवाएं","share.date":"तारीख","share.time":"समय","share.duration":"अवधि","share.total":"कुल","share.name":"नाम","share.phone":"फ़ोन","share.footer":"मिलते हैं! 🙏","hidden.text":"{n} पुरानी बुकिंग छिपाई गई"}
+};
+
+let currentLang=localStorage.getItem("lang")||"en";
+let currentTheme=localStorage.getItem("theme")||"light";
+
+function t(key,vars){let str=(I18N[currentLang]&&I18N[currentLang][key])||(I18N.en[key])||key;if(vars)Object.keys(vars).forEach(k=>{str=str.replace(new RegExp("\\{"+k+"\\}","g"),vars[k]);});return str;}
+
+function applyLanguage(){
+  document.documentElement.lang=currentLang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{el.textContent=t(el.dataset.i18n);});
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{el.placeholder=t(el.dataset.i18nPlaceholder);});
+  document.querySelectorAll("#langToggle button").forEach(b=>{b.classList.toggle("active",b.dataset.lang===currentLang);});
+  const toggle=document.getElementById("langToggle");
+  if(toggle)toggle.dataset.active=currentLang;
+  updatePhoneHint();updateQueueText();
+  if(timePickerReady)validateTimeUI();
+  updateDateQuickButtons();
+  renderBookings();
+}
+
+document.getElementById("langToggle").addEventListener("click",e=>{
+  const btn=e.target.closest("button[data-lang]");if(!btn)return;
+  currentLang=btn.dataset.lang;localStorage.setItem("lang",currentLang);
+  applyLanguage();renderServices();renderServiceList();updateSelectedServicesUI();renderBookings();updateFooter();
+});
+
+function applyTheme(){
+  if(currentTheme==="dark")document.body.classList.add("dark");
+  else document.body.classList.remove("dark");
+  const icon=document.querySelector("#themeToggleBtn .theme-icon");
+  if(icon)icon.textContent=currentTheme==="dark"?"☀️":"🌙";
+  const meta=document.querySelector('meta[name="theme-color"]');
+  if(meta)meta.content=currentTheme==="dark"?"#0a0a0f":"#f4f1ec";
+}
+document.getElementById("themeToggleBtn").addEventListener("click",()=>{
+  currentTheme=currentTheme==="dark"?"light":"dark";localStorage.setItem("theme",currentTheme);applyTheme();
+});
+
+function updatePhoneHint(){const el=document.getElementById("phoneHint");if(el)el.textContent=t("phone.hint",{n:selectedCountry.digits,c:selectedCountry.name});}
+
+function updateFooter(){
+  const brand=document.getElementById("footerBrand");
+  const navBrand=document.getElementById("navBrandText");
+  const year=document.getElementById("footerYear");
+  if(brand)brand.textContent=SALON.name;
+  if(navBrand)navBrand.textContent=SALON.name;
+  if(year)year.textContent=new Date().getFullYear();
+  const fPhone=document.getElementById("footerPhoneText");if(fPhone)fPhone.textContent=SALON.phone||"";
+  const fAddr=document.getElementById("footerAddressText");if(fAddr)fAddr.textContent=SALON.address||"";
+}
+
+function timeStrToMinutes(s){if(!s)return -1;const m=String(s).trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);if(!m)return -1;let h=parseInt(m[1],10);const mn=parseInt(m[2],10);const ap=m[3].toUpperCase();if(ap==="PM"&&h!==12)h+=12;if(ap==="AM"&&h===12)h=0;return h*60+mn;}
+function salonTimeToMinutes(x){if(!x)return 0;const p=String(x).split(":");return (parseInt(p[0],10)||0)*60+(parseInt(p[1],10)||0);}
+function isBookingTimeValid(s){const mn=timeStrToMinutes(s);if(mn<0)return false;const o=salonTimeToMinutes(SALON.openingTime);const c=salonTimeToMinutes(SALON.closingTime);const l=c-LAST_BOOKING_BUFFER_MIN;return mn>=o&&mn<=l;}
+function isDateTimeInPast(d,s){const td=getTodayString();if(!d||d!==td)return false;const mn=timeStrToMinutes(s);if(mn<0)return false;const n=new Date();return mn<=n.getHours()*60+n.getMinutes();}
+function minutesToHuman(mn){let h=Math.floor(mn/60);const m=mn%60;const ap=h>=12?"PM":"AM";let hh=h%12;if(hh===0)hh=12;return `${String(hh).padStart(2,"0")}:${String(m).padStart(2,"0")} ${ap}`;}
+function parseDurationToMinutes(str){if(!str)return 0;const s=String(str).toLowerCase();let total=0;const h=s.match(/(\d+(?:\.\d+)?)\s*(?:h|hr|hour|hours|घंटा|घंटे)/);const m=s.match(/(\d+)\s*(?:m|min|mins|minute|minutes|मिनट)/);if(h)total+=parseFloat(h[1])*60;if(m)total+=parseInt(m[1],10);if(!h&&!m){const n=parseInt(s.replace(/\D+/g,""),10);if(!isNaN(n))total=n;}return Math.round(total);}
+function formatDurationMins(tm){if(!tm||tm<=0)return "";const h=Math.floor(tm/60);const m=tm%60;const hs=currentLang==="hi"?"घंटा":"h";const ms=currentLang==="hi"?"मिनट":"min";if(h>0&&m>0)return `~${h} ${hs} ${m} ${ms}`;if(h>0)return `~${h} ${hs}`;return `~${m} ${ms}`;}
+function getSelectedTotalDuration(){return selectedServices.reduce((s,x)=>s+parseDurationToMinutes(x.duration),0);}
+function generateBookingRef(){const c="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";let cd="";for(let i=0;i<4;i++)cd+=c[Math.floor(Math.random()*c.length)];const y=String(new Date().getFullYear()).slice(-2);return `GD-${y}${String(new Date().getMonth()+1).padStart(2,"0")}-${cd}`;}
+function formatToken(n){return "#"+String(n).padStart(3,"0");}
+
+function getBookingDateTime(b){const d=b?.appointment?.date,ti=b?.appointment?.time;if(!d||!ti)return null;const mn=timeStrToMinutes(ti);if(mn<0)return null;const p=String(d).split("-");if(p.length!==3)return null;const y=parseInt(p[0],10),mo=parseInt(p[1],10)-1,da=parseInt(p[2],10);if(isNaN(y)||isNaN(mo)||isNaN(da))return null;const dt=new Date(y,mo,da,0,0,0);dt.setMinutes(mn);return dt;}
+function canCancelBooking(b){const st=(b.status||"pending").toLowerCase();if(st==="cancelled"||st==="completed")return false;const dt=getBookingDateTime(b);if(!dt)return false;return dt.getTime()>Date.now()+CANCEL_CUTOFF_MINUTES*60*1000;}
+function shouldHideBooking(b){const st=(b.status||"pending").toLowerCase();if(st!=="cancelled"&&st!=="completed")return false;const dt=getBookingDateTime(b);if(!dt)return false;const co=new Date();co.setDate(co.getDate()-HIDE_PAST_DAYS);return dt.getTime()<co.getTime();}
+function getHiddenCount(){return customerBookings.filter(b=>shouldHideBooking(b)).length;}
+function getReminderInfo(b){const st=(b.status||"pending").toLowerCase();if(st!=="pending"&&st!=="confirmed")return null;const dt=getBookingDateTime(b);if(!dt)return null;const diff=dt.getTime()-Date.now();if(diff<0)return null;const hours=diff/(1000*60*60);const days=hours/24;const hi=currentLang==="hi";if(hours<=1){const mn=Math.max(1,Math.round(hours*60));return {type:"urgent",text:hi?`⏰ ~${mn} मिनट में शुरू`:`⏰ Starting in ~${mn} min`};}if(hours<=24){const h=Math.round(hours);return {type:"urgent",text:hi?`⏰ ~${h} घंटे में`:`⏰ In ~${h} hour${h>1?"s":""}`};}if(days<=2)return {type:"soon",text:hi?`📅 कल/परसों`:`📅 Tomorrow / Day after`};if(days<=7){const d=Math.round(days);return {type:"soon",text:hi?`📅 ${d} दिन में`:`📅 In ${d} days`};}return null;}
+
+window.toggleBookingCard=function(id){if(expandedBookings.has(id))expandedBookings.delete(id);else expandedBookings.add(id);renderBookings();};
+
+const COUNTRIES=[{name:"India",flag:"🇮🇳",code:"+91",digits:10},{name:"Pakistan",flag:"🇵🇰",code:"+92",digits:10},{name:"Bangladesh",flag:"🇧🇩",code:"+880",digits:10},{name:"Nepal",flag:"🇳🇵",code:"+977",digits:10},{name:"Sri Lanka",flag:"🇱🇰",code:"+94",digits:9},{name:"UAE",flag:"🇦🇪",code:"+971",digits:9},{name:"Saudi Arabia",flag:"🇸🇦",code:"+966",digits:9},{name:"USA",flag:"🇺🇸",code:"+1",digits:10},{name:"UK",flag:"🇬🇧",code:"+44",digits:10},{name:"Canada",flag:"🇨🇦",code:"+1",digits:10},{name:"Australia",flag:"🇦🇺",code:"+61",digits:9},{name:"Singapore",flag:"🇸🇬",code:"+65",digits:8},{name:"Malaysia",flag:"🇲🇾",code:"+60",digits:10},{name:"Other",flag:"🌍",code:"+",digits:15}];
+let selectedCountry=COUNTRIES[0];
+
+window.openCountrySheet=function(){renderCountryList();document.getElementById("countrySheet").classList.add("show");};
+window.closeCountrySheet=function(){document.getElementById("countrySheet").classList.remove("show");};
+document.getElementById("countrySheet").addEventListener("click",function(e){if(e.target===this)closeCountrySheet();});
+
+function renderCountryList(){const list=document.getElementById("countryList");list.innerHTML=COUNTRIES.map((c,i)=>{const isSel=c.name===selectedCountry.name&&c.code===selectedCountry.code;return `<button class="country-item ${isSel?'selected':''}" onclick="selectCountry(${i})"><span class="flag">${c.flag}</span><span class="name">${c.name}</span><span class="code">${c.code}</span></button>`;}).join("");}
+
+window.selectCountry=function(i){
+  selectedCountry=COUNTRIES[i];
+  document.getElementById("countryFlag").textContent=selectedCountry.flag;
+  document.getElementById("countryCode").textContent=selectedCountry.code;
+  const phoneInput=document.getElementById("customerPhone");
+  phoneInput.maxLength=selectedCountry.digits;
+  phoneInput.placeholder=selectedCountry.digits+" digit number";
+  updatePhoneHint();
+  phoneInput.value="";
+  clearFieldError("customerPhone","errPhone");
+  closeCountrySheet();
+};
+
+document.getElementById("customerPhone").addEventListener("input",function(){this.value=this.value.replace(/\D/g,"").slice(0,selectedCountry.digits);clearFieldError("customerPhone","errPhone");});
+
+function setFieldError(inputId,errId,message){const input=document.getElementById(inputId);const err=document.getElementById(errId);if(input)input.classList.add("invalid");if(err){err.textContent=message;err.classList.add("show");}}
+function clearFieldError(inputId,errId){const input=document.getElementById(inputId);const err=document.getElementById(errId);if(input)input.classList.remove("invalid");if(err){err.classList.remove("show");err.textContent="";}}
+function clearAllErrors(){clearFieldError("customerName","errName");clearFieldError("customerPhone","errPhone");clearFieldError("bookingDate","errDate");}
+
+function renderServiceList(){
+  const list=document.getElementById("serviceList");
+  if(!SERVICES.length){list.innerHTML=`<div class="empty" style="padding:30px 16px;border:0;background:transparent;"><h3>${t("empty.services")}</h3></div>`;return;}
+  const q=serviceSearchQuery.trim().toLowerCase();
+  const filtered=q?SERVICES.filter(s=>(s.name||"").toLowerCase().includes(q)||(s.description||"").toLowerCase().includes(q)):SERVICES;
+  if(!filtered.length){list.innerHTML=`<div class="no-result"><div style="font-size:32px;margin-bottom:8px;">🔍</div><h3 style="font-size:14px;font-weight:800;margin-bottom:4px;">${t("empty.noResult")}</h3><p>${t("empty.noResultSub")}</p></div>`;return;}
+  list.innerHTML=filtered.map(service=>{const isSel=selectedServices.some(s=>s.id===service.id);return `<button type="button" class="service-item ${isSel?'selected':''}" onclick="pickService('${service.id}')"><span class="service-item-icon">${escapeHTML(service.icon||"✂️")}</span><span class="service-item-info"><div class="name">${escapeHTML(service.name||"")}</div>${service.description?`<div class="desc">${escapeHTML(service.description)}</div>`:""}</span><span class="service-item-price">₹${Number(service.price||0)}</span><span class="service-item-check"></span></button>`;}).join("");
+}
+
+window.openServiceSheet=function(){serviceSearchQuery="";const si=document.getElementById("serviceSearchInput");if(si)si.value="";renderServiceList();document.getElementById("serviceSheet").classList.add("show");};
+window.closeServiceSheet=function(){document.getElementById("serviceSheet").classList.remove("show");};
+document.getElementById("serviceSheet").addEventListener("click",function(e){if(e.target===this)closeServiceSheet();});
+document.getElementById("serviceSearchInput").addEventListener("input",function(){serviceSearchQuery=this.value;renderServiceList();});
+
+window.pickService=function(id){const service=SERVICES.find(s=>s.id===id);if(!service)return;const idx=selectedServices.findIndex(s=>s.id===id);if(idx>-1)selectedServices.splice(idx,1);else selectedServices.push(service);updateSelectedServicesUI();renderServiceList();};
+window.removeService=function(id){selectedServices=selectedServices.filter(s=>s.id!==id);updateSelectedServicesUI();renderServiceList();};
+
+function updateSelectedServicesUI(){
+  const list=document.getElementById("selectedServicesList");
+  const totalBar=document.getElementById("totalBar");
+  const totalVal=document.getElementById("totalValue");
+  const totalDur=document.getElementById("totalDuration");
+  if(!list)return;
+  if(!selectedServices.length){
+    list.innerHTML=`<div class="selected-service" style="opacity:.55;"><div class="selected-service-icon">✂️</div><div class="selected-service-info"><h3>${t("empty.noService")}</h3><p>${t("empty.tapAdd")}</p></div></div>`;
+    if(totalBar)totalBar.style.display="none";
+    return;
+  }
+  list.innerHTML=selectedServices.map(s=>`<div class="selected-service"><div class="selected-service-icon">${escapeHTML(s.icon||"✂️")}</div><div class="selected-service-info"><h3>${escapeHTML(s.name||"")}</h3><p>₹${Number(s.price||0)}</p></div><button type="button" class="remove-service-btn" onclick="removeService('${s.id}')">×</button></div>`).join("");
+  const total=selectedServices.reduce((sum,s)=>sum+Number(s.price||0),0);
+  if(totalBar){
+    totalBar.style.display="";
+    totalVal.textContent=total;
+    const durMins=getSelectedTotalDuration();
+    if(totalDur)totalDur.textContent=formatDurationMins(durMins)||"";
+  }
+}
+
+let timePickerReady=false;
+function initTimePicker(){
+  if(timePickerReady)return;
+  timePickerReady=true;
+  const hourRow=document.getElementById("tpHour");
+  const minRow=document.getElementById("tpMinute");
+  for(let h=1;h<=12;h++){const val=String(h).padStart(2,"0");const el=document.createElement("div");el.className="tp-item";el.dataset.value=val;el.textContent=val;hourRow.appendChild(el);}
+  for(let m=0;m<60;m+=5){const val=String(m).padStart(2,"0");const el=document.createElement("div");el.className="tp-item";el.dataset.value=val;el.textContent=val;minRow.appendChild(el);}
+  hourRow.querySelectorAll(".tp-item").forEach(el=>{el.addEventListener("click",()=>smoothScrollToItem(hourRow,el));});
+  minRow.querySelectorAll(".tp-item").forEach(el=>{el.addEventListener("click",()=>smoothScrollToItem(minRow,el));});
+  let t1,t2;
+  hourRow.addEventListener("scroll",()=>{clearTimeout(t1);t1=setTimeout(()=>updateCenter(hourRow),100);});
+  minRow.addEventListener("scroll",()=>{clearTimeout(t2);t2=setTimeout(()=>updateCenter(minRow),100);});
+  document.querySelectorAll("#tpAmpm button").forEach(b=>{b.addEventListener("click",()=>{document.querySelectorAll("#tpAmpm button").forEach(x=>x.classList.remove("active"));b.classList.add("active");updateSelectedTime();});});
+  const dateInput=document.getElementById("bookingDate");
+  if(dateInput)dateInput.addEventListener("change",()=>{updateSelectedTime();updateDateQuickButtons();clearFieldError("bookingDate","errDate");});
+  setTimeout(()=>{jumpToItem(hourRow,hourRow.querySelector('[data-value="09"]'));jumpToItem(minRow,minRow.querySelector('[data-value="00"]'));updateCenter(hourRow);updateCenter(minRow);},60);
+}
+function jumpToItem(row,el){if(!el)return;const rowRect=row.getBoundingClientRect();const elRect=el.getBoundingClientRect();row.scrollLeft=elRect.left-rowRect.left+row.scrollLeft-(rowRect.width/2-elRect.width/2);}
+function smoothScrollToItem(row,el){if(!el)return;const rowRect=row.getBoundingClientRect();const elRect=el.getBoundingClientRect();row.scrollTo({left:elRect.left-rowRect.left+row.scrollLeft-(rowRect.width/2-elRect.width/2),behavior:"smooth"});}
+function updateCenter(row){const rect=row.getBoundingClientRect();const centerX=rect.left+rect.width/2;let closest=null,minDist=Infinity;const items=row.querySelectorAll(".tp-item");items.forEach(el=>{const r=el.getBoundingClientRect();const d=Math.abs((r.left+r.width/2)-centerX);if(d<minDist){minDist=d;closest=el;}});items.forEach(el=>el.classList.remove("active"));if(closest)closest.classList.add("active");updateSelectedTime();}
+function updateSelectedTime(){const h=document.querySelector("#tpHour .tp-item.active")?.dataset.value||"09";const m=document.querySelector("#tpMinute .tp-item.active")?.dataset.value||"00";const ap=document.querySelector("#tpAmpm button.active")?.dataset.ampm||"AM";selectedTime=`${h}:${m} ${ap}`;const el=document.getElementById("tpSelected");if(el)el.textContent=selectedTime;validateTimeUI();}
+function validateTimeUI(){
+  const pickerBox=document.getElementById("timePickerBox");
+  const warning=document.getElementById("timeWarning");
+  const warningText=document.getElementById("timeWarningText");
+  const submitBtn=document.getElementById("submitBtn");
+  const dateVal=document.getElementById("bookingDate")?.value||"";
+  const inRange=isBookingTimeValid(selectedTime);
+  const inPast=isDateTimeInPast(dateVal,selectedTime);
+  const openMins=salonTimeToMinutes(SALON.openingTime);
+  const closeMins=salonTimeToMinutes(SALON.closingTime);
+  const lastSlot=closeMins-LAST_BOOKING_BUFFER_MIN;
+  if(!inRange){
+    pickerBox?.classList.add("error");warning?.classList.add("show");
+    if(submitBtn)submitBtn.disabled=true;
+    if(timeStrToMinutes(selectedTime)<openMins){if(warningText)warningText.textContent=t("time.beforeOpen",{t:minutesToHuman(openMins)});}
+    else{if(warningText)warningText.textContent=t("time.afterClose",{c:minutesToHuman(closeMins),l:minutesToHuman(lastSlot)});}
+    return;
+  }
+  if(inPast){
+    pickerBox?.classList.add("error");warning?.classList.add("show");
+    if(submitBtn)submitBtn.disabled=true;
+    if(warningText)warningText.textContent=t("time.past",{t:selectedTime});
+    return;
+  }
+  pickerBox?.classList.remove("error");warning?.classList.remove("show");
+  if(submitBtn)submitBtn.disabled=false;
+}
+function resetTimePicker(){
+  if(!timePickerReady)return;
+  const hourRow=document.getElementById("tpHour");
+  const minRow=document.getElementById("tpMinute");
+  jumpToItem(hourRow,hourRow.querySelector('[data-value="09"]'));
+  jumpToItem(minRow,minRow.querySelector('[data-value="00"]'));
+  document.querySelectorAll("#tpAmpm button").forEach(x=>x.classList.remove("active"));
+  document.querySelector('#tpAmpm button[data-ampm="AM"]').classList.add("active");
+  updateCenter(hourRow);updateCenter(minRow);
+}
+function renderTimeSlots(){
+  if(!timePickerReady)initTimePicker();
+  else setTimeout(()=>{updateCenter(document.getElementById("tpHour"));updateCenter(document.getElementById("tpMinute"));},50);
+  setTimeout(validateTimeUI,80);
+}
+
+function getDateOffsetString(offset){const d=new Date();d.setDate(d.getDate()+offset);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;}
+function updateDateQuickButtons(){const dateVal=document.getElementById("bookingDate")?.value||"";document.querySelectorAll("#dateQuick button").forEach(b=>{const off=parseInt(b.dataset.offset,10);b.classList.toggle("active",dateVal===getDateOffsetString(off));});}
+document.getElementById("dateQuick").addEventListener("click",e=>{const btn=e.target.closest("button[data-offset]");if(!btn)return;const off=parseInt(btn.dataset.offset,10);document.getElementById("bookingDate").value=getDateOffsetString(off);clearFieldError("bookingDate","errDate");updateDateQuickButtons();updateSelectedTime();});
+
+signInAnonymously(auth).catch(error=>{console.error("Auth error:",error);showToast("Could not connect to Firebase",true);});
+onAuthStateChanged(auth,user=>{if(!user)return;currentUser=user;startRealtimeData();});
+
+function showServicesSkeleton(){const grid=document.getElementById("serviceGrid");grid.innerHTML=`<div class="skeleton-card"><div class="skel skel-icon"></div><div class="skel skel-line medium"></div><div class="skel skel-line short"></div><div class="skel skel-line price"></div><div class="skel skel-btn"></div></div><div class="skeleton-card"><div class="skel skel-icon"></div><div class="skel skel-line medium"></div><div class="skel skel-line short"></div><div class="skel skel-line price"></div><div class="skel skel-btn"></div></div>`;}
+function showServicesError(){const grid=document.getElementById("serviceGrid");grid.innerHTML=`<div class="error-card" style="grid-column:1/-1;"><div class="err-icon">📡</div><h3>${t("error.loadServices")}</h3><p>${t("error.loadServicesSub")}</p><button class="retry-btn" onclick="retryServices()">🔄 ${t("btn.retry")}</button></div>`;}
+window.retryServices=function(){showServicesSkeleton();if(unsubscribeServices)unsubscribeServices();startServicesListener();};
+function showBookingsSkeleton(){const container=document.getElementById("bookingList");container.innerHTML=`<div class="skeleton-card"><div class="skel skel-line medium"></div><div class="skel skel-line short"></div></div><div class="skeleton-card"><div class="skel skel-line medium"></div><div class="skel skel-line short"></div></div>`;}
+function showBookingsError(){const container=document.getElementById("bookingList");container.innerHTML=`<div class="error-card"><div class="err-icon">📡</div><h3>${t("error.loadBookings")}</h3><p>${t("error.loadBookingsSub")}</p><button class="retry-btn" onclick="retryBookings()">🔄 ${t("btn.retry")}</button></div>`;}
+window.retryBookings=function(){showBookingsSkeleton();if(unsubscribeBookings)unsubscribeBookings();startBookingsListener();};
+
+function startRealtimeData(){startServicesListener();startSettingsListener();startBookingsListener();startQueueListener();}
+
+function startServicesListener(){
+  unsubscribeServices=onSnapshot(collection(db,"services"),snapshot=>{
+    SERVICES=snapshot.docs.map(d=>({id:d.id,...d.data()})).filter(service=>service.active!==false);
+    SERVICES.sort((a,b)=>String(a.name||"").localeCompare(String(b.name||"")));
+    renderServices();renderServiceList();
+    if(selectedServices.length){selectedServices=selectedServices.map(old=>{const fresh=SERVICES.find(s=>s.id===old.id);return fresh||old;}).filter(Boolean);updateSelectedServicesUI();}
+  },error=>{console.error("Services error:",error);showServicesError();});
+}
+function startSettingsListener(){
+  if(unsubscribeSettings)unsubscribeSettings();
+  unsubscribeSettings=onSnapshot(doc(db,"settings","salon"),snapshot=>{
+    if(!snapshot.exists())return;
+    SALON={...SALON,...snapshot.data()};
+    renderSalon();updateFooter();
+    if(timePickerReady)validateTimeUI();
+  },error=>{console.error("Settings error:",error);});
+}
+function startBookingsListener(){
+  if(!currentUser)return;
+  const bookingsQuery=query(collection(db,"bookings"),where("customerUid","==",currentUser.uid));
+  unsubscribeBookings=onSnapshot(bookingsQuery,snapshot=>{
+    customerBookings=snapshot.docs.map(d=>({id:d.id,...d.data()}));
+    customerBookings.sort((a,b)=>getBookingTimestamp(b)-getBookingTimestamp(a));
+    renderBookings();
+  },error=>{console.error("Bookings error:",error);showBookingsError();});
+}
+function startQueueListener(){
+  if(unsubscribeQueue)unsubscribeQueue();
+  const today=getTodayString();
+  const q=query(collection(db,"bookings"),where("appointment.date","==",today));
+  unsubscribeQueue=onSnapshot(q,snapshot=>{
+    let count=0;
+    snapshot.forEach(docSnap=>{const data=docSnap.data();const status=(data.status||"pending").toLowerCase();if(status==="pending"||status==="confirmed")count++;});
+    updateQueueCount(count);
+  },error=>{console.error("Queue error:",error);updateQueueCount(0);});
+}
+
+let currentQueueCount=0;
+function updateQueueCount(count){currentQueueCount=count;updateQueueText();}
+function updateQueueText(){const valEl=document.getElementById("queueValue");if(!valEl)return;if(currentQueueCount===0){valEl.innerHTML=`<strong>0</strong><span>${t("queue.empty")}</span>`;}else{valEl.innerHTML=`<strong>${currentQueueCount}</strong><span>${t("queue.people")}</span>`;}}
+
+function renderSalon(){
+  const heroName=document.getElementById("heroSalonName");
+  if(heroName)heroName.textContent=SALON.name;
+  document.getElementById("salonAddress").textContent=SALON.address;
+  document.getElementById("salonOpening").textContent=`${formatTime(SALON.openingTime)} — ${formatTime(SALON.closingTime)}`;
+  const addressLink=document.getElementById("addressLink");
+  if(addressLink)addressLink.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(SALON.address);
+  const phone=String(SALON.phone||"").replace(/[^\d+]/g,"");
+  document.getElementById("heroCall").href=`tel:${phone}`;
+  document.getElementById("callButton").href=`tel:${phone}`;
+  let whatsapp=String(SALON.whatsapp||"").replace(/\D/g,"");
+  if(!whatsapp)whatsapp=String(SALON.phone||"").replace(/\D/g,"");
+  document.getElementById("whatsappButton").href=whatsapp?`https://wa.me/${whatsapp}`:"#";
+  const footerWa=document.getElementById("footerWhatsapp");if(footerWa&&whatsapp)footerWa.href=`https://wa.me/${whatsapp}`;
+  const footerPh=document.getElementById("footerPhone");if(footerPh)footerPh.href=`tel:${phone}`;
+  const footerAd=document.getElementById("footerAddress");if(footerAd)footerAd.href=addressLink?addressLink.href:"#";
+  const input=document.getElementById("bookingDate");
+  if(input){input.min=getTodayString();if(!input.value)input.value=getTodayString();}
+  updateDateQuickButtons();
+}
+
+function renderServices(){
+  const grid=document.getElementById("serviceGrid");
+  if(!SERVICES.length){grid.innerHTML=`<div class="empty" style="grid-column:1/-1;"><h3>${t("empty.services")}</h3><p>${t("empty.servicesSub")}</p></div>`;return;}
+  grid.innerHTML=SERVICES.map(service=>`<div class="service-card"><div class="service-icon">${escapeHTML(service.icon||"✂️")}</div><h3>${escapeHTML(service.name||"")}</h3><p>${escapeHTML(service.description||"")}</p><div class="service-meta"><div class="service-price">${Number(service.price||0)}</div><div class="service-duration">${escapeHTML(service.duration||"")}</div></div><button class="book-btn" onclick="selectService('${service.id}')">${t("btn.bookNow")}</button></div>`).join("");
+}
+
+window.selectService=function(id){const service=SERVICES.find(s=>s.id===id);if(!service)return;if(!selectedServices.find(s=>s.id===id))selectedServices.push(service);updateSelectedServicesUI();showPage("booking");};
+window.goBooking=function(){if(!selectedServices.length){showToast(t("toast.selectService"));return;}showPage("booking");};
+window.bookAgain=function(bookingId){
+  const booking=customerBookings.find(b=>b.id===bookingId);if(!booking)return;
+  const serviceIds=booking.serviceIds||(booking.services||[]).map(s=>s.id)||[];
+  if(!serviceIds.length){showToast("Services not available");return;}
+  const matched=serviceIds.map(id=>SERVICES.find(s=>s.id===id)).filter(Boolean);
+  if(!matched.length){showToast(t("toast.servicesUnavailable"));return;}
+  selectedServices=matched;updateSelectedServicesUI();showPage("booking");
+  showToast(matched.length+" service"+(matched.length>1?"s":"")+" selected",false,"success");
+};
+
+window.shareBooking=function(bookingId){
+  const booking=customerBookings.find(b=>b.id===bookingId);if(!booking)return;
+  const servicesList=booking.services?.map(s=>s.name).join(", ")||booking.serviceNames?.join(", ")||booking.service?.name||"Service";
+  const ref=booking.bookingRef||"";
+  const token=booking.tokenDisplay||(booking.token?formatToken(booking.token):"");
+  const date=booking.appointment?.date||"";
+  const time=booking.appointment?.time||"";
+  const price=booking.totalPrice??(booking.services?booking.services.reduce((sum,s)=>sum+Number(s.price||0),0):(booking.service?.price??0));
+  const durMins=booking.totalDuration||(booking.services?booking.services.reduce((sum,s)=>sum+parseDurationToMinutes(s.duration),0):0);
+  const name=booking.customer?.name||"";
+  const phone=booking.customer?.fullPhone||(booking.customer?.countryCode?booking.customer.countryCode+" "+(booking.customer.phone||""):(booking.customer?.phone||""));
+  const status=(booking.status||"pending").toUpperCase();
+  const lines=[];
+  lines.push(`✨ *${t("share.salon")}* ✨`);lines.push("");lines.push(t("share.greeting"));lines.push("");
+  lines.push(`🆔 *${t("share.bookingId")}:* ${ref}`);
+  if(token)lines.push(`🎫 *${t("share.token")}:* ${token}`);
+  lines.push(`💼 *${t("share.services")}:* ${servicesList}`);
+  lines.push(`📅 *${t("share.date")}:* ${formatDate(date)}`);
+  lines.push(`🕐 *${t("share.time")}:* ${time}`);
+  if(durMins>0)lines.push(`⏱️ *${t("share.duration")}:* ${formatDurationMins(durMins)}`);
+  lines.push(`💰 *${t("share.total")}:* ₹${price}`);
+  lines.push("");
+  if(name)lines.push(`👤 *${t("share.name")}:* ${name}`);
+  if(phone)lines.push(`📞 *${t("share.phone")}:* ${phone}`);
+  lines.push("");lines.push(`📌 ${status}`);lines.push("");lines.push(t("share.footer"));lines.push("— Guddu Hair Salon");
+  const message=lines.join("\n");
+  if(navigator.share){navigator.share({title:`${t("share.salon")} — ${ref}`,text:message}).then(()=>showToast(t("toast.shared"),false,"success")).catch(err=>{if(err&&err.name==="AbortError")return;openWhatsAppShare(message);});return;}
+  openWhatsAppShare(message);
+};
+function openWhatsAppShare(message){const url="https://wa.me/?text="+encodeURIComponent(message);window.open(url,"_blank");showToast(t("toast.shared"),false,"success");}
+
+window.openConfirmDialog=function(){
+  clearAllErrors();
+  const name=document.getElementById("customerName").value.trim();
+  const phone=document.getElementById("customerPhone").value.trim();
+  const date=document.getElementById("bookingDate").value;
+  const note=document.getElementById("customerNote").value.trim();
+  let hasError=false;
+  if(!name){setFieldError("customerName","errName",t("toast.name"));hasError=true;}
+  if(!phone){setFieldError("customerPhone","errPhone",t("toast.phone"));hasError=true;}
+  else if(phone.length!==selectedCountry.digits){setFieldError("customerPhone","errPhone",t("toast.phoneLen",{n:selectedCountry.digits}));hasError=true;}
+  if(!date){setFieldError("bookingDate","errDate",t("toast.date"));hasError=true;}
+  else if(date<getTodayString()){setFieldError("bookingDate","errDate",t("toast.validDate"));hasError=true;}
+  if(!selectedServices.length){showToast(t("toast.noServices"));hasError=true;}
+  if(!isBookingTimeValid(selectedTime)||isDateTimeInPast(date,selectedTime)){validateTimeUI();hasError=true;}
+  if(hasError){const firstInvalid=document.querySelector(".field input.invalid");if(firstInvalid){firstInvalid.scrollIntoView({behavior:"smooth",block:"center"});setTimeout(()=>firstInvalid.focus(),300);}return;}
+  const freshServices=selectedServices.map(s=>SERVICES.find(x=>x.id===s.id)).filter(Boolean);
+  if(!freshServices.length){showToast(t("toast.servicesUnavailable"));return;}
+  const totalPrice=freshServices.reduce((sum,s)=>sum+Number(s.price||0),0);
+  const totalDur=freshServices.reduce((sum,s)=>sum+parseDurationToMinutes(s.duration),0);
+  const serviceNames=freshServices.map(s=>s.name).join(" + ");
+  const fullPhone=selectedCountry.code+" "+phone;
+  pendingBooking={name,phone,date,note,services:freshServices,totalPrice,totalDur,serviceNames,fullPhone,bookingRef:generateBookingRef()};
+  const summary=document.getElementById("confirmSummary");
+  summary.innerHTML=`
+    <div class="confirm-row"><span class="label">${t("confirm.bookingId")}</span><span class="value" style="color:var(--violet);font-family:monospace;">${pendingBooking.bookingRef}</span></div>
+    <div class="confirm-row"><span class="label">${t("confirm.services")}</span><span class="value">${escapeHTML(serviceNames)}</span></div>
+    <div class="confirm-row"><span class="label">${t("confirm.date")}</span><span class="value">${escapeHTML(formatDate(date))}</span></div>
+    <div class="confirm-row"><span class="label">${t("confirm.time")}</span><span class="value">${escapeHTML(selectedTime)}</span></div>
+    <div class="confirm-row"><span class="label">${t("confirm.name")}</span><span class="value">${escapeHTML(name)}</span></div>
+    <div class="confirm-row"><span class="label">${t("confirm.phone")}</span><span class="value">${escapeHTML(fullPhone)}</span></div>
+    ${totalDur>0?`<div class="confirm-row"><span class="label">${t("confirm.duration")}</span><span class="value">${formatDurationMins(totalDur)}</span></div>`:""}
+    <div class="confirm-row" style="border-top:1px dashed var(--line);padding-top:14px;margin-top:4px;"><span class="label">${t("confirm.total")}</span><span class="value price">₹${totalPrice}</span></div>
+  `;
+  document.getElementById("confirmModal").classList.add("show");
+};
+window.closeConfirmDialog=function(){document.getElementById("confirmModal").classList.remove("show");pendingBooking=null;};
+document.getElementById("confirmModal").addEventListener("click",function(e){if(e.target===this)closeConfirmDialog();});
+
+window.openCancelDialog=function(bookingId){
+  const booking=customerBookings.find(b=>b.id===bookingId);if(!booking)return;
+  if(!canCancelBooking(booking)){showToast(t("toast.cancelTooLate"),true);return;}
+  cancellingBookingId=bookingId;
+  const servicesList=booking.services?.map(s=>s.name).join(" + ")||booking.serviceNames?.join(" + ")||booking.service?.name||"Service";
+  const date=booking.appointment?.date||"-";const time=booking.appointment?.time||"-";
+  const ref=booking.bookingRef||"";
+  const summary=document.getElementById("cancelSummary");
+  summary.innerHTML=`${ref?`<div class="confirm-row"><span class="label">${t("confirm.bookingId")}</span><span class="value" style="color:var(--violet);font-family:monospace;">${escapeHTML(ref)}</span></div>`:""}<div class="confirm-row"><span class="label">${t("confirm.services")}</span><span class="value">${escapeHTML(servicesList)}</span></div><div class="confirm-row"><span class="label">${t("confirm.date")}</span><span class="value">${escapeHTML(formatDate(date))}</span></div><div class="confirm-row"><span class="label">${t("confirm.time")}</span><span class="value">${escapeHTML(time)}</span></div>`;
+  document.getElementById("cancelModal").classList.add("show");
+};
+window.closeCancelDialog=function(){document.getElementById("cancelModal").classList.remove("show");cancellingBookingId=null;};
+document.getElementById("cancelModal").addEventListener("click",function(e){if(e.target===this)closeCancelDialog();});
+
+window.confirmCancelBooking=async function(){
+  if(!cancellingBookingId)return;
+  const booking=customerBookings.find(b=>b.id===cancellingBookingId);
+  if(!booking){closeCancelDialog();return;}
+  if(!canCancelBooking(booking)){closeCancelDialog();showToast(t("toast.cancelTooLate"),true);return;}
+  const btn=document.getElementById("cancelConfirmBtn");
+  if(btn){btn.disabled=true;btn.textContent="...";}
+  try{
+    await updateDoc(doc(db,"bookings",cancellingBookingId),{status:"cancelled",cancelledAt:serverTimestamp(),updatedAt:serverTimestamp()});
+    showToast(t("toast.cancelled"),false,"success");closeCancelDialog();
+  }catch(error){console.error("Cancel error:",error);showToast(t("toast.cancelFailed"),true);}
+  finally{if(btn){btn.disabled=false;btn.textContent=t("cancel.yes");}}
+};
+
+window.submitBooking=async function(){
+  if(!currentUser){showToast(t("toast.connecting"));return;}
+  if(!pendingBooking)return;
+  if(!navigator.onLine){showToast(t("toast.offline"),true);return;}
+  const btn=document.getElementById("confirmSubmitBtn");
+  if(btn){btn.disabled=true;btn.textContent="...";}
+  const {name,phone,date,note,services,totalPrice,totalDur,serviceNames,fullPhone,bookingRef}=pendingBooking;
+  const serviceNamesArray=services.map(s=>s.name);
+  const durationCombined=services.map(s=>s.duration).filter(Boolean).join(" + ");
+  try{
+    const dateQuery=query(collection(db,"bookings"),where("appointment.date","==",date));
+    const dateSnap=await getDocs(dateQuery);
+    let slotCount=0;
+    dateSnap.forEach(docSnap=>{const b=docSnap.data();const bTime=b?.appointment?.time||"";const bStatus=(b.status||"pending").toLowerCase();if(bTime===selectedTime&&bStatus!=="cancelled"&&bStatus!=="completed")slotCount++;});
+    if(slotCount>=MAX_BOOKINGS_PER_SLOT){closeConfirmDialog();showToast(t("toast.slotFull"),true);validateTimeUI();if(btn){btn.disabled=false;btn.textContent=t("confirm.confirm");}return;}
+    const tokenNum=dateSnap.size+1;
+    const tokenDisplay=formatToken(tokenNum);
+    await addDoc(collection(db,"bookings"),{salonId:"STYLE_STUDIO_001",salonName:SALON.name,bookingRef,token:tokenNum,tokenDisplay,customer:{name,phone,countryCode:selectedCountry.code,countryName:selectedCountry.name,countryFlag:selectedCountry.flag,fullPhone},customerUid:currentUser.uid,services:services.map(s=>({id:s.id,name:s.name,price:Number(s.price||0),duration:s.duration||""})),serviceNames:serviceNamesArray,serviceIds:services.map(s=>s.id),service:{id:services[0].id,name:serviceNames,price:totalPrice,duration:durationCombined},totalPrice,totalDuration:totalDur,appointment:{date,time:selectedTime},note,status:"pending",createdAt:serverTimestamp(),updatedAt:serverTimestamp()});
+    document.getElementById("successText").textContent=`${serviceNames} — ${formatDate(date)} ${selectedTime} — ₹${totalPrice}`;
+    const refEl=document.getElementById("successRef");
+    if(refEl){refEl.innerHTML=`<div style="background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:14px;padding:16px;text-align:center;margin-bottom:12px;"><div style="font-size:10.5px;font-weight:900;letter-spacing:1.2px;color:#92400e;text-transform:uppercase;margin-bottom:6px;">${t("success.tokenLabel")}</div><div style="font-size:34px;font-weight:900;color:#92400e;font-family:monospace;letter-spacing:3px;line-height:1;">${tokenDisplay}</div></div><div style="background:var(--tp-bg);border-radius:14px;padding:14px;text-align:center;"><div style="font-size:10.5px;font-weight:900;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;margin-bottom:6px;">${t("success.refLabel")}</div><div style="font-size:16px;font-weight:900;color:var(--violet);font-family:monospace;letter-spacing:1px;cursor:pointer;" onclick="copyBookingRef('${bookingRef}')">${bookingRef}</div><div style="font-size:10.5px;color:var(--muted);font-weight:700;margin-top:6px;">${t("success.copy")}</div></div>`;}
+    document.getElementById("successModal").classList.add("show");
+    document.getElementById("customerName").value="";document.getElementById("customerPhone").value="";document.getElementById("customerNote").value="";
+    selectedServices=[];updateSelectedServicesUI();resetTimePicker();closeConfirmDialog();
+  }catch(error){console.error("Booking error:",error);showToast(t("toast.failed")+" ("+(error.code||"unknown")+")",true);}
+  finally{if(btn){btn.disabled=false;btn.textContent=t("confirm.confirm");}}
+};
+
+window.copyBookingRef=function(ref){if(navigator.clipboard){navigator.clipboard.writeText(ref).then(()=>showToast("Booking ID copied!",false,"success")).catch(()=>{});}};
+
+function renderBookings(){
+  const container=document.getElementById("bookingList");
+  if(!customerBookings.length){container.innerHTML=`<div class="empty"><h3>${t("empty.bookings")}</h3><p>${t("empty.bookingsSub")}</p></div>`;return;}
+  const visible=customerBookings.filter(b=>!shouldHideBooking(b));
+  const hiddenCount=getHiddenCount();
+  if(!visible.length){container.innerHTML=`<div class="empty"><h3>${t("empty.bookings")}</h3><p>${t("empty.bookingsSub")}</p></div>`;return;}
+  let html=visible.map(booking=>{
+    const servicesList=booking.services?.map(s=>s.name).join(" + ")||booking.serviceNames?.join(" + ")||booking.service?.name||"Service";
+    const price=booking.totalPrice??(booking.services?booking.services.reduce((sum,s)=>sum+Number(s.price||0),0):(booking.service?.price??0));
+    const date=booking.appointment?.date||"-";const time=booking.appointment?.time||"-";
+    const status=booking.status||"pending";
+    const flag=booking.customer?.countryFlag||"";
+    const phoneStr=booking.customer?.fullPhone||(booking.customer?.countryCode?booking.customer.countryCode+" "+(booking.customer.phone||""):(booking.customer?.phone||""));
+    const ref=booking.bookingRef||"";
+    const token=booking.tokenDisplay||(booking.token?formatToken(booking.token):"");
+    const canRebook=status!=="cancelled";
+    const canCancel=canCancelBooking(booking);
+    const reminder=getReminderInfo(booking);
+    const isExpanded=expandedBookings.has(booking.id);
+    const isCancelled=status==="cancelled";
+    return `<div class="booking-card ${isCancelled?"cancelled":""} ${isExpanded?"expanded":""}" onclick="toggleBookingCard('${booking.id}')">
+      <div class="booking-head"><div class="booking-head-left"><h3>${escapeHTML(servicesList)}</h3><div class="booking-tags">${token?`<span class="token-badge">🎫 ${escapeHTML(token)}</span>`:""}${ref?`<span class="booking-ref">#${escapeHTML(ref)}</span>`:""}</div><span class="status ${escapeHTML(status)}">${escapeHTML(status)}</span></div><div class="booking-price">${Number(price)}</div></div>
+      <div class="booking-body"><div>${reminder?`<div class="booking-reminder ${reminder.type==="urgent"?"urgent":""}">${reminder.text}</div>`:""}<p>📅 ${escapeHTML(formatDate(date))}</p><p>🕐 ${escapeHTML(time)}</p>${phoneStr?`<p>${flag} ${escapeHTML(phoneStr)}</p>`:""}${booking.note?`<p>📝 ${escapeHTML(booking.note)}</p>`:""}<div class="booking-actions" onclick="event.stopPropagation()">${canRebook?`<button class="rebook-btn" onclick="bookAgain('${booking.id}')">🔁 ${t("btn.bookAgain")}</button>`:""}<button class="share-btn" onclick="shareBooking('${booking.id}')">📤 ${t("btn.share")}</button>${canCancel?`<button class="cancel-btn" onclick="openCancelDialog('${booking.id}')">✕ ${t("btn.cancel")}</button>`:""}</div></div></div>
+    </div>`;
+  }).join("");
+  if(hiddenCount>0)html+=`<div class="hidden-count">${t("hidden.text",{n:hiddenCount})}</div>`;
+  container.innerHTML=html;
+}
+
+window.showPage=function(page){
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.querySelectorAll(".nav-link").forEach(b=>b.classList.remove("active"));
+  const pageEl=document.getElementById(page+"Page");
+  if(pageEl)pageEl.classList.add("active");
+  if(page==="home")document.getElementById("homeNav").classList.add("active");
+  if(page==="booking"){document.getElementById("bookingNav").classList.add("active");renderTimeSlots();updateSelectedServicesUI();}
+  if(page==="bookings"){document.getElementById("appointmentsNav").classList.add("active");renderBookings();}
+  window.scrollTo({top:0,behavior:"smooth"});
+};
+
+window.closeSuccess=function(){
+  document.getElementById("successModal").classList.remove("show");
+  document.getElementById("successRef").innerHTML="";
+  showPage("bookings");
+};
+
+function getTodayString(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;}
+function formatDate(date){if(!date)return "-";const d=new Date(`${date}T00:00:00`);if(isNaN(d.getTime()))return date;const locale=currentLang==="hi"?"hi-IN":"en-IN";return d.toLocaleDateString(locale,{day:"numeric",month:"short",year:"numeric"});}
+function formatTime(time){if(!time)return "";const parts=time.split(":");if(parts.length<2)return time;let hour=Number(parts[0]);const suffix=hour>=12?"PM":"AM";hour=hour%12||12;return `${String(hour).padStart(2,"0")}:${parts[1]} ${suffix}`;}
+function getBookingTimestamp(booking){
+  if(booking.createdAt&&typeof booking.createdAt.toMillis==="function")return booking.createdAt.toMillis();
+  if(booking.createdAt&&typeof booking.createdAt.toDate==="function")return booking.createdAt.toDate().getTime();
+  if(booking.createdAt){const value=new Date(booking.createdAt).getTime();if(!isNaN(value))return value;}
+  return 0;
+}
+function escapeHTML(value){return String(value??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");}
+function showToast(message,isError,type){
+  const toast=document.getElementById("toast");
+  toast.textContent=message;
+  toast.classList.remove("error","success");
+  if(isError)toast.classList.add("error");
+  else if(type==="success")toast.classList.add("success");
+  toast.classList.add("show");
+  clearTimeout(toast._t);
+  toast._t=setTimeout(()=>{toast.classList.remove("show","error","success");},3200);
+}
+
+window.addEventListener("online",()=>showToast("Back online",false,"success"));
+window.addEventListener("offline",()=>showToast(t("toast.offline"),true));
+
+applyTheme();
+applyLanguage();
+updateFooter();
+document.getElementById("bookingDate").min=getTodayString();
+document.getElementById("bookingDate").value=getTodayString();
+updateDateQuickButtons();
+updateSelectedServicesUI();
+document.getElementById("customerName").addEventListener("input",()=>clearFieldError("customerName","errName"));
+</script>
+</body>
+</html>
